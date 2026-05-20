@@ -1,0 +1,291 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>iFeed MRA · Research Methodology</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bone:#FAFAF7;--white:#FFF;--ink:#0D0D0E;--ink-soft:#3A3A3D;--mute:#8E8E93;--hair:#E5E5EA;--sage:#7A9B86;--sage-deep:#4A6B56;--sage-tint:#E8EEEA;--gold:#B89868;--gold-deep:#8E6F42;--gold-tint:#F3EDE0;--signal:#C4432B;--f-serif:"Source Serif 4",Georgia,serif;--f-ui:"Inter",system-ui,sans-serif;--f-mono:"JetBrains Mono",Menlo,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--white);color:var(--ink-soft);font-family:var(--f-ui);font-size:14px;line-height:1.6}
+a{color:var(--sage-deep);text-decoration:none}a:hover{text-decoration:underline}
+.util{background:var(--ink);color:var(--bone);padding:7px 32px;font-size:11px;display:flex;gap:20px;justify-content:flex-end}
+.util a{color:var(--bone)}
+.hdr{background:var(--white);border-bottom:1px solid var(--hair);padding:14px 32px;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;position:sticky;top:0;z-index:10}
+.hdr .brand{display:flex;align-items:baseline;gap:6px}
+.hdr .wm{font-family:var(--f-serif);font-weight:400;font-size:26px;color:var(--ink);letter-spacing:-0.02em}
+.hdr .wm em{font-style:italic}.hdr .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);transform:translateY(-3px)}
+.hdr .tag{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--mute);padding-left:12px;border-left:1px solid var(--hair);margin-left:12px}
+.hdr nav ul{list-style:none;padding:0;margin:0;display:flex;gap:28px;justify-content:center}
+.hdr nav a{color:var(--ink-soft);font-size:13px;font-weight:500;padding:6px 0;border-bottom:2px solid transparent}
+.hdr nav a:hover,.hdr nav a.active{color:var(--ink);border-color:var(--sage-deep)}
+.hdr .cta{padding:8px 18px;background:var(--sage-deep);color:var(--white);border-radius:6px;font-size:13px;font-weight:500}
+.hero{background:var(--bone);padding:56px 32px;border-bottom:1px solid var(--hair)}
+.hero .inner{max-width:1180px;margin:0 auto}
+.hero .eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:14px}
+.hero h1{font-family:var(--f-serif);font-weight:300;font-size:48px;color:var(--ink);letter-spacing:-0.03em;margin:0 0 14px;line-height:1.08}
+.hero .lede{font-family:var(--f-serif);font-style:italic;font-size:18px;color:var(--ink-soft);max-width:720px;line-height:1.5}
+.body{max-width:1100px;margin:0 auto;padding:56px 32px}
+.body h2{font-family:var(--f-serif);font-weight:400;font-size:32px;color:var(--ink);letter-spacing:-0.02em;margin:48px 0 16px;padding-top:28px;border-top:1px solid var(--hair)}
+.body h2:first-of-type{border-top:0;padding-top:0;margin-top:0}
+.body h3{font-family:var(--f-serif);font-weight:500;font-size:20px;color:var(--ink);margin:24px 0 10px}
+.body h4{font-family:var(--f-ui);font-weight:600;font-size:13px;color:var(--ink);margin:16px 0 8px;text-transform:uppercase;letter-spacing:0.04em}
+.body p{margin:0 0 14px;color:var(--ink-soft)}
+.body ul,.body ol{padding-left:22px}.body li{margin-bottom:10px}
+.body li strong{color:var(--ink)}
+.stages{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}
+.stage{padding:20px;background:var(--bone);border:1px solid var(--hair);border-radius:10px;text-align:center}
+.stage .n{font-family:var(--f-mono);font-size:10px;letter-spacing:0.08em;color:var(--gold-deep);font-weight:600;margin-bottom:6px}
+.stage h4{font-family:var(--f-serif);font-weight:500;font-size:17px;color:var(--ink);margin:0 0 8px;text-transform:none;letter-spacing:-0.01em}
+.stage p{font-size:12.5px;color:var(--ink-soft);margin:0;line-height:1.5}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:20px 0}
+.col-card{padding:22px;background:var(--bone);border:1px solid var(--hair);border-radius:10px}
+.col-card h4{margin-top:0;font-family:var(--f-serif);font-weight:500;font-size:16px;color:var(--ink);text-transform:none;letter-spacing:-0.01em}
+.col-card ul{padding-left:18px;margin:0}.col-card li{font-size:13px;margin-bottom:8px}
+.validation{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.val{padding:18px;background:var(--sage-tint);border-radius:10px;text-align:center;border:1px solid var(--hair)}
+.val .lvl{font-family:var(--f-mono);font-size:11px;color:var(--sage-deep);font-weight:600;letter-spacing:0.06em;margin-bottom:6px}
+.val .txt{font-family:var(--f-serif);font-size:14px;color:var(--ink);font-weight:500}
+.certs{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:32px 0;padding:24px;background:var(--bone);border-radius:10px;border:1px solid var(--hair)}
+.cert{text-align:center}
+.cert .badge{display:inline-flex;width:56px;height:56px;border-radius:50%;background:var(--sage-tint);align-items:center;justify-content:center;font-family:var(--f-mono);font-size:10px;color:var(--sage-deep);font-weight:600;margin-bottom:8px;letter-spacing:0.04em}
+.cert .lbl{font-size:11px;color:var(--ink-soft);font-weight:500}
+.clients{background:var(--bone);padding:48px 32px;margin:40px 0;border-radius:10px;text-align:center;border:1px solid var(--hair)}
+.clients h3{font-family:var(--f-serif);font-weight:400;font-size:24px;color:var(--ink);margin:0 0 32px}
+.clients h4{font-family:var(--f-ui);font-weight:600;font-size:13px;color:var(--ink);margin:24px 0 14px;text-transform:uppercase;letter-spacing:0.04em}
+.client-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:20px}
+.client{padding:14px 20px;background:var(--white);border:1px solid var(--hair);border-radius:8px;font-family:var(--f-serif);font-weight:400;font-size:13px;color:var(--ink-soft);letter-spacing:-0.01em}
+.cta-band{padding:48px 32px;background:var(--ink);color:var(--bone);border-radius:10px;text-align:center;margin:40px 0}
+.cta-band h3{font-family:var(--f-serif);font-weight:400;font-size:26px;color:var(--bone);margin:0 0 14px;letter-spacing:-0.02em}
+.cta-band p{color:var(--bone);opacity:0.8;max-width:560px;margin:0 auto 20px;font-size:14.5px}
+.cta-band .btn{display:inline-block;padding:12px 28px;background:var(--sage-deep);color:var(--bone);border-radius:6px;font-size:13px;font-weight:500;margin:4px;text-decoration:none}
+.cta-band .btn:hover{background:var(--sage)}
+.cta-band .btn.s{background:transparent;border:1px solid var(--bone)}
+footer{padding:40px 32px;background:var(--ink);color:var(--bone);font-family:var(--f-mono);letter-spacing:0.02em;font-size:12px}
+.foot-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.foot-brand .wm{font-family:var(--f-serif);font-weight:300;font-size:26px;color:var(--bone);letter-spacing:-0.02em;margin-bottom:8px;font-style:normal}
+.foot-brand .wm em{font-style:italic}
+.foot-col h5{font-size:11px;text-transform:uppercase;letter-spacing:0.12em;color:var(--mute);margin:0 0 12px;font-family:var(--f-ui);font-weight:600}
+.foot-col ul{list-style:none;padding:0;margin:0}
+.foot-col li{margin-bottom:8px}
+.foot-col a{color:var(--bone);opacity:0.7;font-size:12px;text-decoration:none}
+.foot-col a:hover{opacity:1}
+.copyright{max-width:1180px;margin:32px auto 0;padding-top:24px;border-top:1px solid rgba(250,250,247,0.1);text-align:center;font-size:11px;color:var(--bone);opacity:0.6}
+@media (max-width:780px){.hdr nav{display:none}.stages,.two-col,.validation{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr}}
+</style>
+</head><body>
+
+<div class="util">
+  <a href="mailto:sunita@ifeed.ai">sunita@ifeed.ai</a>
+  <a href="#">Dublin · Europe/Dublin</a>
+  <a href="#">LinkedIn</a>
+</div>
+
+<header class="hdr">
+  <div class="brand"><span class="wm">i<em>F</em>eed</span><span class="dot"></span><span class="tag">Market Research</span></div>
+  <nav><ul>
+    <li><a href="index.html">All Reports</a></li>
+    <li><a href="index.html#industries">Industries</a></li>
+    <li><a href="methodology.html" class="active">Methodology</a></li>
+    <li><a href="index.html#moat">iFeed Moat</a></li>
+    <li><a href="../MRA_Thorough_Build_Plan_v1.md">Build Plan</a></li>
+  </ul></nav>
+  <a class="cta" href="mailto:sunita@ifeed.ai?subject=Sample%20Request">Download Sample</a>
+</header>
+
+<section class="hero">
+  <div class="inner">
+    <div class="eyebrow">iFeed Market Research Agency · Methodology</div>
+    <h1>Our Research Methodology</h1>
+    <p class="lede">A glimpse at our time-tested and proven information gathering, analysis, formulation, and validation process — authored by a Regulatory Quality Governance Architect with 20 years of cross-domain field experience, structured to match the rigour of Grand View Research while delivering what paid-report firms fundamentally cannot.</p>
+  </div>
+</section>
+
+<main class="body">
+
+<h2>Introduction</h2>
+<p>Throughout each step of our research and reporting process, iFeed institutes industry best practices and international standards of data collection, analysis, and reporting, to provide comprehensive, validated insights to our clients. Our process is rigorous and iterative, and specific to the regulated-life-sciences industries we cover. We continue to validate our work as we uncover new data points and derive new insights, and we work with clients to clearly define research goals and agree upon the methodology we'll apply to each project.</p>
+<p><strong>Zero-hallucination discipline</strong> governs every output. Every factual claim traces to a citation, a verifiable public source, or an explicit [VERIFY] / [FETCH] / [AUTHOR] flag. Nothing is plausibility-filled. Nothing is fabricated. This is the non-negotiable principle that distinguishes iFeed reports from conventional market research.</p>
+
+<h2>Information Procurement</h2>
+<p>Information procurement is one of the most extensive and important stages in our research process. Quality data is absolutely critical for accurate analysis. We follow a multi-channel data collection process to gather the most reliable and current information possible.</p>
+<ul>
+<li><strong>Paid databases</strong> — access to Grand View Research · MarketsandMarkets · Mordor Intelligence · Fortune Business Insights · PitchBook (deal flow) · EvaluatePharma (pharma pipeline) · IQVIA MIDAS (pharma sales) for cross-source triangulation.</li>
+<li><strong>Regulatory agency primary sources</strong> — FDA (21 CFR, guidance documents, 483 database, warning letters, MAUDE, inspection reports) · EMA · MHRA · CDSCO · PMDA · Health Canada · TGA.</li>
+<li><strong>Public financial filings</strong> — SEC EDGAR (10-K, 10-Q, 8-K, DEF 14A) · company annual reports · investor presentations · earnings call transcripts.</li>
+<li><strong>Industry association data</strong> — PhRMA · BIO · ISPE · AAPS · DIA · RAPS · ACRP · ISPOR · ISMPP · MedTech Europe.</li>
+<li><strong>Academic literature</strong> — PubMed · PubMed Central · arXiv · bioRxiv · medRxiv · SSRN.</li>
+<li><strong>Primary research</strong> — structured one-on-one phone interviews with industry experts · questionnaires · field observation from the authored practitioner's network.</li>
+<li><strong>Grand View / MarketsandMarkets / Mordor report subscriptions</strong> — where their publications touch our domains, used for Tier A parity triangulation.</li>
+<li><strong>Patent databases</strong> — USPTO · EPO · WIPO · Google Patents · Espacenet.</li>
+<li><strong>Clinical trial registries</strong> — ClinicalTrials.gov · EudraCT · CTRI · UMIN · WHO ICTRP.</li>
+</ul>
+
+<h2>Information Analysis</h2>
+<p>We mine the data collected to establish baselines for forecasting, identify trends and opportunities, gain insight into buyer demographics and drivers, and so much more. We utilise different methods of data analysis depending on the type of information we're trying to uncover.</p>
+
+<h3>Market research approaches</h3>
+
+<div class="two-col">
+  <div class="col-card">
+    <h4>Bottom-up Approach</h4>
+    <ul>
+      <li>Demand estimation of each product / service across countries or regions summed to form the total market</li>
+      <li>Variable analysis for demand forecast</li>
+      <li>Demand estimation via paid databases, company financials from annual reports</li>
+      <li>Primary interviews for data revalidation and insight collection</li>
+    </ul>
+  </div>
+  <div class="col-card">
+    <h4>Top-down Approach</h4>
+    <ul>
+      <li>Used extensively for new-product forecasting or analysing penetration level</li>
+      <li>Tool uses invoice-product-flow and penetration models</li>
+      <li>Regression multi-variant analysis for forecasting</li>
+      <li>Extensive use of paid and public databases</li>
+      <li>Primary interviews and vendor-based primary research for variable-impact analysis</li>
+    </ul>
+  </div>
+</div>
+
+<h3>Combined / Mixed Approach</h3>
+<p>Applied for full coverage analysis — derived via commodity flow and demand/consumption models, combining bottom-up and top-down triangulation with regression validation.</p>
+
+<h3>Value-Chain-Based Sizing &amp; Forecasting</h3>
+
+<div class="two-col">
+  <div class="col-card">
+    <h4>Supply Side Estimates</h4>
+    <ul>
+      <li>Company revenue estimation via annual reports, investor presentations, SEC filings, Hoover's</li>
+      <li>Segment revenue determination via variable analysis and penetration modelling</li>
+      <li>Competitive benchmarking to identify market leaders and their collective revenue shares</li>
+      <li>Forecasting via analysing commercialisation rates, pipeline, market initiatives, distribution networks</li>
+    </ul>
+  </div>
+  <div class="col-card">
+    <h4>Demand Side Estimates</h4>
+    <ul>
+      <li>Identifying parent markets and ancillary markets</li>
+      <li>Segment penetration analysis to obtain pertinent revenue / volume</li>
+      <li>Heuristic forecasting with the help of subject-matter experts</li>
+      <li>Forecasting via variable analysis</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>Qualitative Functional Deployment (QFD) Modelling</strong> is applied for market-share assessment across vendor landscape sections.</p>
+
+<h2>Market Formulation &amp; Validation</h2>
+<p>We finalise market numbers through data normalisation, aligning estimates and forecasts, and refining the report scope and data representation. Our process includes multiple validation levels involving industry experts and quality-control managers, ensuring that only thoroughly validated studies move forward for publication.</p>
+
+<h3>Market Formulation</h3>
+<ul>
+  <li>Finalisation of market numbers — designed to manage outputs from the Data Analysis step.</li>
+  <li><strong>Data Normalisation</strong> — final market estimates and forecasts are aligned and sent to industry experts and in-panel quality-control managers for validation.</li>
+  <li>Finalisation of report scope and data representation pattern.</li>
+</ul>
+
+<h3>Multi-level Data Validation</h3>
+<div class="validation">
+  <div class="val"><div class="lvl">Level 1</div><div class="txt">In-panel QC team validation</div></div>
+  <div class="val"><div class="lvl">Level 2</div><div class="txt">Validation by Industry Experts &amp; Key Opinion Leaders</div></div>
+  <div class="val"><div class="lvl">Level 3</div><div class="txt">Validation by multiple data-analysis models (triangulation)</div></div>
+</div>
+<p>All three steps run in parallel. The study is forwarded for publishing only if all three levels render validated results. If partial validation only, the study waits for complete validation before moving to Step 2 and then to Publishing.</p>
+
+<h2>Delivery</h2>
+<p>We know that iFeed clients are looking for more than data points on a page — they're relying on a trusted adviser and partner to hunt for insights and collaborate with them to diagnose and respond to market forces.</p>
+
+<h3>Delivery Details</h3>
+<p>Each iFeed analyst works with clients to scope questions appropriately and clarify report findings. Moreover, each client is assigned a project point person to ensure a smooth process throughout the course of the project. We believe this open flow of communication is critical to providing meaningful and accurate consultation.</p>
+
+<div class="stages">
+  <div class="stage"><div class="n">Stage 1</div><h4>Market Inputs</h4><p>Macro &amp; micro economic factors · political scenarios and regulations · industrial policies · technology challenges · CAPEX projects &amp; investment patterns · sales channel profitability.</p></div>
+  <div class="stage"><div class="n">Stage 2</div><h4>Addressing Client Inputs</h4><p>iFeed team works around the client's brief to address particular pain points — market entry, new product launches, M&amp;A partner identification, JV/investments, location feasibility, financial modelling, technology roadmap, customer satisfaction.</p></div>
+  <div class="stage"><div class="n">Stage 3</div><h4>Solution Development</h4><p>iFeed team builds a strategy roadmap with actionable insights and strategic recommendations for the client, based on the outcome of Stages 1–2, aligned to client objectives.</p></div>
+</div>
+
+<h2>The iFeed Differentiator — Tier C Moat</h2>
+<p>iFeed reports are structurally identical to Grand View Research, MarketsandMarkets, Mordor Intelligence on <strong>Tier A parity</strong> — same market sizing, segmentation, Porter's, PESTEL, regional deep-dives, company profiles. Structurally identical on <strong>Tier B depth</strong> — data tables, charts, case studies, appendices.</p>
+<p>What makes iFeed reports unique is <strong>Tier C</strong> — seven sections (§16–§22) authored by a Regulatory Quality Governance Architect with 20 years of cross-domain field experience. No analyst firm produces this layer because no analyst firm employs practitioners who have worked inside bioanalytical CROs, clinical trial sites, and medical-device quality rooms across three decades.</p>
+<ul>
+<li><strong>Governance-architect lens</strong> — every market finding mapped to the specific ICH / FDA / EMA / ISO clause driving it</li>
+<li><strong>Failure-pattern registry</strong> — 483s, warning letters, inspection findings captured as a structured registry</li>
+<li><strong>Cross-domain bridges</strong> — how bioanalytical ↔ clinical ↔ device markets connect as systems, not silos</li>
+<li><strong>Practitioner-authored insights</strong> — case-specific, from-the-inside insight only field experience can produce</li>
+<li><strong>Consulting conversion map</strong> — every finding maps to a specific iFeed consulting engagement</li>
+<li><strong>India-Ireland-EU positioning</strong> — unique geographic arbitrage analysis from a practitioner operating across all three jurisdictions</li>
+<li><strong>Regulatory pulse 24-month forecast</strong> — what's coming, what will break</li>
+</ul>
+
+<div class="certs">
+  <div class="cert"><div class="badge">GDPR<br>CCPA</div><div class="lbl">Privacy compliant</div></div>
+  <div class="cert"><div class="badge">ISO<br>9001</div><div class="lbl">Quality Mgmt (in alignment)</div></div>
+  <div class="cert"><div class="badge">ISO<br>27001</div><div class="lbl">InfoSec (in alignment)</div></div>
+  <div class="cert"><div class="badge">Part 11<br>ALCOA+</div><div class="lbl">Data integrity</div></div>
+</div>
+
+<h2>Proven Record</h2>
+<p>iFeed is a new market research agency; the authored practitioner (Sunita Nawale) has served regulated-life-sciences organisations across three decades in the following sectors:</p>
+
+<div class="clients">
+  <h4>Pharma &amp; Life Sciences — training / field experience</h4>
+  <div class="client-grid">
+    <div class="client">Panexcell Clinical</div>
+    <div class="client">Genechth Research</div>
+    <div class="client">Boston Scientific (Galway context)</div>
+    <div class="client">Teva (Lotus Labs)</div>
+  </div>
+
+  <h4>Target client segments</h4>
+  <div class="client-grid">
+    <div class="client">Pharma · Biotech</div>
+    <div class="client">CROs</div>
+    <div class="client">Clinical Diagnostic Labs</div>
+    <div class="client">Medical Device OEMs</div>
+    <div class="client">Academic / Research Labs</div>
+    <div class="client">Regulatory Consultancies</div>
+    <div class="client">PE / VC Investors in Life Sciences</div>
+    <div class="client">Notified Bodies</div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h3>Trusted market insights — try a free sample</h3>
+  <p>See how iFeed reports are structured and why we're positioning as the first research agency authored by a Regulatory Quality Governance Architect. Get a free sample or ask us to tailor a report to your needs.</p>
+  <a class="btn" href="mailto:sunita@ifeed.ai?subject=Customize%20report">Customize This Report</a>
+  <a class="btn s" href="mailto:sunita@ifeed.ai?subject=Free%20Sample">Download Free Sample</a>
+</div>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="wm">i<em>F</em>eed</div>
+      A methodology of iFeed<br>
+      Authored by Sunita Nawale · Regulatory Quality Governance Architect · Galway, Ireland<br><br>
+      <a href="mailto:sunita@ifeed.ai" style="color:var(--bone);opacity:0.9">sunita@ifeed.ai</a><br>
+      Dublin · Europe/Dublin
+    </div>
+    <div class="foot-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="index.html">All Reports</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="index.html#moat">iFeed Moat</a></li>
+        <li><a href="mailto:sunita@ifeed.ai">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="#">Research Reports</a></li>
+        <li><a href="#">Custom Research</a></li>
+        <li><a href="#">Consulting Engagements</a></li>
+        <li><a href="#">Training &amp; Workshops</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">© 2026 iFeed Market Research · A methodology of iFeed · All rights reserved · Zero-hallucination discipline · quarterly refresh</div>
+</footer>
+
+</body></html>

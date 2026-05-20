@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+
+# Netlify build output
+.netlify/
+.netlify-cli/
+
+# Local environment
+.env
+.env.local
+
+# Backups
+*.bak
+*.tmp

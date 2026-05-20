@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Clinical Trials · Global Market with Irish &amp;amp; Indian Cuts · iFeed Market Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bone: #FAFAF7;
+  --white: #FFF;
+  --ink: #0D0D0E;
+  --ink-soft: #3A3A3D;
+  --mute: #8E8E93;
+  --hair: #E5E5EA;
+  --hair-2: #D5D5D8;
+  --sage: #7A9B86;
+  --sage-deep: #4A6B56;
+  --sage-tint: #E8EEEA;
+  --gold: #B89868;
+  --gold-deep: #8E6F42;
+  --gold-tint: #F3EDE0;
+  --signal: #C4432B;
+  --signal-tint: #F7E4DE;
+  --f-serif: "Source Serif 4", Georgia, serif;
+  --f-ui: "Inter", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink-soft);
+  font-family: var(--f-ui);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--sage-deep); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ─── Utility bar (dark) ─── */
+.util {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 7px 24px;
+  font-size: 11px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.util .left { display: flex; gap: 16px; }
+.util .right { display: flex; gap: 16px; }
+.util a { color: var(--bone); font-family: var(--f-mono); letter-spacing: 0.04em; }
+.util .sep { color: var(--mute); }
+
+/* ─── Sticky main header ─── */
+.hdr {
+  background: var(--white);
+  border-bottom: 1px solid var(--hair);
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.hdr .brand { display: flex; align-items: baseline; gap: 6px; }
+.hdr .wm {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.hdr .wm em { font-style: italic; color: var(--sage-deep); }
+.hdr .dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+.hdr .tag {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding-left: 10px;
+  border-left: 1px solid var(--hair);
+  margin-left: 10px;
+}
+.hdr nav ul {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; gap: 20px; justify-content: center;
+}
+.hdr nav a {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.hdr nav a:hover {
+  color: var(--ink);
+  border-color: var(--sage-deep);
+  text-decoration: none;
+}
+.hdr .cta {
+  padding: 7px 16px;
+  background: var(--sage-deep);
+  color: var(--white) !important;
+  border-radius: 5px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.hdr .cta:hover { background: var(--ink); text-decoration: none; }
+
+/* ─── Breadcrumb ─── */
+.breadcrumb {
+  background: var(--bone);
+  padding: 10px 24px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--hair);
+}
+.breadcrumb a { color: var(--mute); }
+.breadcrumb a:hover { color: var(--sage-deep); text-decoration: none; }
+.breadcrumb .sep { margin: 0 8px; color: var(--hair-2); }
+.breadcrumb .here { color: var(--ink); }
+
+/* ─── Hero ─── */
+.hero {
+  background: var(--bone);
+  padding: 40px 24px 48px;
+  border-bottom: 1px solid var(--hair);
+}
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.hero .eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-family: var(--f-serif);
+  font-weight: 300;
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--ink);
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+  line-height: 1.14;
+  max-width: 880px;
+}
+.hero h1 em { font-style: italic; color: var(--sage-deep); font-weight: 400; }
+.hero .lede {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 760px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 18px 0 0;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.03em;
+}
+.hero-meta .m strong {
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-weight: 600;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+/* Hero key numbers (real market metrics · extracted from .stat-grid) */
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+  max-width: 900px;
+}
+.hero-metrics .km {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--sage-deep);
+  padding: 12px 14px;
+  border-radius: 0 5px 5px 0;
+}
+.hero-metrics .km .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+}
+.hero-metrics .km .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Hero CTA row (under metrics · simple action buttons · matches Precedence) */
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+.hero-actions .btn {
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 500;
+  border: 1px solid var(--sage-deep);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.hero-actions .btn-primary { background: var(--sage-deep); color: var(--white); }
+.hero-actions .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+.hero-actions .btn-secondary { background: var(--white); color: var(--sage-deep); }
+.hero-actions .btn-secondary:hover { background: var(--sage-tint); }
+
+/* ─── 3-col page grid (target ~1080px to fit cockpit iframe) ─── */
+.page-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  display: grid;
+  grid-template-columns: 200px 1fr 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Left rail · sticky TOC */
+.toc-rail {
+  position: sticky;
+  top: 80px;
+  font-size: 12px;
+}
+.toc-rail h5 {
+  font-family: var(--f-ui);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+  margin: 0 0 12px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hair);
+}
+.toc-rail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: toc;
+}
+.toc-rail li {
+  counter-increment: toc;
+  margin-bottom: 9px;
+  position: relative;
+  padding-left: 24px;
+}
+.toc-rail li::before {
+  content: counter(toc, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.toc-rail a {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+  display: block;
+}
+.toc-rail a:hover { color: var(--sage-deep); text-decoration: none; }
+.toc-rail .toc-more {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--hair);
+  font-size: 11px;
+  color: var(--mute);
+  font-family: var(--f-mono);
+  letter-spacing: 0.04em;
+}
+
+/* Center · report content */
+.content {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.content h2 {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin: 40px 0 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hair);
+  scroll-margin-top: 72px;
+}
+.content h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 6px; }
+.content h3 {
+  font-family: var(--f-serif);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 22px 0 10px;
+}
+.content h4 {
+  font-family: var(--f-ui);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--ink);
+  margin: 18px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.content p { margin: 0 0 13px; color: var(--ink-soft); }
+.content strong { color: var(--ink); font-weight: 600; }
+.content em { font-style: italic; }
+.content ul, .content ol { padding-left: 22px; margin: 4px 0 14px; }
+.content li { margin-bottom: 7px; }
+.content li strong { color: var(--ink); }
+.content a {
+  color: var(--sage-deep);
+  border-bottom: 1px solid color-mix(in srgb, var(--sage-deep) 30%, transparent);
+}
+.content a:hover { border-bottom-color: var(--sage-deep); text-decoration: none; }
+.content hr { border: none; border-top: 1px solid var(--hair); margin: 24px 0; }
+.content code {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.content blockquote {
+  border-left: 3px solid var(--sage);
+  background: var(--sage-tint);
+  margin: 16px 0;
+  padding: 12px 18px;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Executive summary */
+.content .exec {
+  background: var(--sage-tint);
+  border: 1px solid color-mix(in srgb, var(--sage) 25%, var(--hair));
+  border-left: 4px solid var(--sage-deep);
+  padding: 20px 24px;
+  border-radius: 0 6px 6px 0;
+  margin: 24px 0 28px;
+}
+.content .exec h4 {
+  font-family: var(--f-mono);
+  color: var(--sage-deep);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin: 0 0 8px;
+}
+.content .exec p {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Stat grid (in body · separate from hero metrics) */
+.content .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+.content .stat {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--gold-deep);
+  border-radius: 0 5px 5px 0;
+  padding: 12px 14px;
+}
+.content .stat .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+  margin-bottom: 4px;
+}
+.content .stat .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Diff / highlight */
+.content .diff {
+  background: var(--gold-tint);
+  border: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  border-left: 4px solid var(--gold-deep);
+  padding: 18px 22px;
+  margin: 22px 0;
+  border-radius: 0 6px 6px 0;
+}
+.content .diff .tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--gold-deep);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.content .diff h3 { color: var(--gold-deep); margin: 0 0 8px; }
+
+/* Market cut */
+.content .market-cut {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 14px 0;
+}
+.content .market-cut h3 { margin-top: 0; }
+
+/* Tables */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 12.5px;
+}
+.content table thead th {
+  text-align: left;
+  padding: 9px 11px;
+  border-bottom: 2px solid var(--hair);
+  font-family: var(--f-mono);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mute);
+  background: var(--bone);
+}
+.content table tbody td {
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--hair);
+  color: var(--ink);
+  vertical-align: top;
+}
+.content table tbody tr:nth-child(odd) { background: var(--bone); }
+
+/* Sources */
+.content .srcs {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 32px 0 0;
+  font-size: 12px;
+  color: var(--mute);
+}
+.content .srcs h4 { color: var(--ink-soft); margin: 0 0 6px; }
+.content .srcs ul { margin: 4px 0 0 18px; }
+.content .srcs li { color: var(--mute); font-size: 11.5px; }
+
+/* ─── Right rail · sticky pricing + details ─── */
+.buy-rail {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sample request (matches Precedence "Ask For Sample" pattern · separate from priced tiers) */
+.sample-box {
+  background: var(--white);
+  border: 1px solid var(--sage-deep);
+  border-radius: 6px;
+  padding: 16px 18px;
+  text-align: center;
+}
+.sample-box h5 {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.sample-box p {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+.sample-box .btn {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  background: var(--sage-deep);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.sample-box .btn:hover { background: var(--ink); text-decoration: none; }
+
+/* Pricing box (paid tiers only · per Sunita's 2-level paid · Single + Corporate) */
+.buy-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.buy-box .head {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 12px 16px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.buy-box .indicative {
+  background: var(--gold-tint);
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  padding: 8px 16px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tier {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hair);
+}
+.tier:last-child { border-bottom: 0; }
+.tier .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.tier .label {
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tier .price {
+  font-family: var(--f-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+}
+.tier .price.indicative { font-size: 12px; color: var(--gold-deep); font-style: italic; font-weight: 500; }
+.tier .desc {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin: 4px 0 10px;
+}
+.tier .btn {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--sage-deep);
+  text-align: center;
+  background: var(--white);
+  color: var(--sage-deep);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.tier .btn:hover { background: var(--sage-tint); text-decoration: none; }
+.buy-box .extras {
+  padding: 11px 16px;
+  border-top: 1px solid var(--hair);
+  background: var(--bone);
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.buy-box .extras a {
+  color: var(--ink-soft);
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.buy-box .extras a:hover { color: var(--sage-deep); }
+
+/* Details box */
+.details-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.details-box .head {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--hair);
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.details-box dl {
+  margin: 0;
+  padding: 11px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 11.5px;
+}
+.details-box dt {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+}
+.details-box dd { margin: 0; color: var(--ink); font-weight: 500; }
+
+/* ─── Footer ─── */
+.foot {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 40px 24px 24px;
+  margin-top: 48px;
+}
+.foot-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+}
+.foot h5 {
+  font-family: var(--f-ui);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.foot ul { list-style: none; padding: 0; margin: 0; }
+.foot li { margin-bottom: 7px; }
+.foot a { color: var(--bone); font-size: 12px; }
+.foot a:hover { color: var(--gold); text-decoration: none; }
+.foot p { color: color-mix(in srgb, var(--bone) 75%, var(--mute)); font-size: 12px; line-height: 1.55; }
+.foot .copy {
+  max-width: 1120px;
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--bone) 15%, var(--ink));
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--bone) 60%, var(--mute));
+}
+
+/* Responsive · collapse below 980px (well inside Streamlit-wide iframe) */
+@media (max-width: 980px) {
+  .page-grid { grid-template-columns: 1fr; }
+  .toc-rail, .buy-rail { position: static; }
+  .hero-inner { max-width: none; }
+  .hero-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+  .hdr nav { display: none; }
+  .hero-metrics { grid-template-columns: 1fr; }
+  .foot-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="left">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">📧 upbringing.eipfm@outlook.com</a>
+  </div>
+  <div class="right">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe</a>
+    <span class="sep">·</span>
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="brand">
+    <a class="wm" href="#top">iFeed <em>Market Research</em></a>
+    <span class="dot"></span>
+    <span class="tag">Regulator-grade</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#top">Reports</a></li>
+      <li><a href="#top">Industries</a></li>
+      <li><a href="#top">Services</a></li>
+      <li><a href="#top">Methodology</a></li>
+      <li><a href="#top">About</a></li>
+    </ul>
+  </nav>
+  <a class="cta" href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0AThank%20you.">Speak to Analyst</a>
+</header>
+
+<div class="breadcrumb" id="top">
+  <a>Home</a><span class="sep">›</span>
+  <a>Reports</a><span class="sep">›</span>
+  <a>Clinical Trials</a><span class="sep">›</span>
+  <span class="here">Clinical Trials · Global Market with Irish &amp;amp; Indian Cuts</span>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Clinical Trials · Full Report · MRA-REP-003</div>
+    <h1>Clinical Trials · Global Market with Irish &amp;amp; Indian Cuts</h1>
+    <p class="lede">A practitioner&#x27;s read of the clinical trials market post ICH E6(R3) implementation, the CRO consolidation wave, and where Risk-Based Quality Management creates commercial differentiation most reports still treat as a compliance line-item.</p>
+    <div class="hero-meta"><div class="m"><strong>Author</strong>Sunita Nawale</div><div class="m"><strong>Published</strong>2026-04-22</div><div class="m"><strong>Currency</strong>Current as of 2026-04</div><div class="m"><strong>Horizon</strong>2026 – 2030</div></div>
+    <div class="hero-metrics"><div class="km"><div class="n">$75–85B</div><div class="l">Global market · CRO + sponsor · 2026</div></div><div class="km"><div class="n">7–10%</div><div class="l">CAGR · 2026 – 2030</div></div><div class="km"><div class="n">ICH E6(R3)</div><div class="l">GCP overhaul · 2025 effective</div></div><div class="km"><div class="n">~3,500</div><div class="l">Active trials in India 2026</div></div><div class="km"><div class="n">~35,000</div><div class="l">Active trials globally</div></div><div class="km"><div class="n">~300</div><div class="l">Active trials in Ireland 2026</div></div></div>
+    <div class="hero-actions"><a class="btn btn-primary" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0AThank%20you.">Request Free Sample</a><a class="btn btn-secondary" href="#1-global-market-landscape">Table of Contents</a></div>
+  </div>
+</section>
+
+<div class="page-grid">
+  <aside class="toc-rail"><h5>On this page</h5><ol><li><a href="#1-global-market-landscape">1 · Global Market Landscape</a></li><li><a href="#2-regulatory-forces-reshaping-commercial-economics">2 · Regulatory Forces Reshaping Commercial Economics</a></li><li><a href="#3-ireland-small-but-sophisticated">3 · Ireland · Small But Sophisticated</a></li><li><a href="#4-india-the-volume-market">4 · India · The Volume Market</a></li><li><a href="#5-emerging-trends-2026-2028">5 · Emerging Trends · 2026–2028</a></li><li><a href="#6-competitive-gaps-where-supply-is-thin">6 · Competitive Gaps · Where Supply Is Thin</a></li><li><a href="#7-commercial-implications-practitioner-actions">7 · Commercial Implications · Practitioner Actions</a></li><li><a href="#8-risk-register">8 · Risk Register</a></li></ol></aside>
+  <main class="content">
+    <div class="exec"><h4>Executive Summary</h4><p>The global clinical trials market in 2026 approaches <strong>$75–85B</strong> (CRO services + sponsor direct spend · published estimates vary on inclusion rules). Underlying CAGR 7–10% through 2030 driven by decentralised trial adoption, precision medicine pipeline expansion, and emerging-market site growth. ICH E6(R3) became fully applicable in 2025 (EMA July · FDA September) — the first major overhaul of GCP since 1996 and a larger operational change than the industry has absorbed. Ireland hosts a small but sophisticated trial ecosystem anchored to its pharma and MedTech manufacturing; India is now the world's second-largest trial conduct market by volume with ~3,500 active trials and a regulatory framework (NDCT Rules 2019 + Schedule Y) professionalised post-CDSCO reform. <strong>The moat is no longer sponsor scale — it is Risk-Based Quality Management (RBQM) architecture</strong> that translates E6(R3) §3.3 from a compliance line-item into an operational advantage. Most sponsors still run RBQM as paperwork; the winners in 2026–2028 run it as operating model.</p></div>
+
+
+
+<h2 id="1-global-market-landscape">1 · Global Market Landscape</h2>
+<h3>Size, growth, and structural dynamics</h3>
+<p>Published estimates from IQVIA, Evaluate Pharma, ISR, Clinical Leader, and Frost &amp; Sullivan converge on roughly $75–85B for 2026 depending on whether sponsor internal spend, CRO services, SMO services, and eClinical technology are bundled or counted separately. CRO services proper is ~$55–65B of this. Growth is concentrated in three sub-segments: decentralised trial infrastructure (20%+ CAGR), real-world evidence generation studies (15%+ CAGR), and emerging-market conduct (12%+ CAGR).</p>
+
+<h3>Segment breakdown</h3>
+<table><thead><tr><th>Segment</th><th>2026 size</th><th>CAGR</th><th>Notable dynamics</th></tr></thead><tbody>
+<tr><td>CRO services (full-service)</td><td>~$45B</td><td>7–9%</td><td>Consolidation continues · top 5 consolidating mid-cap</td></tr>
+<tr><td>CRO services (functional / FSP)</td><td>~$15B</td><td>9–12%</td><td>Sponsor preference shifting here post-cost-pressure</td></tr>
+<tr><td>eClinical technology (EDC, eCOA, eConsent, RBQM platforms)</td><td>~$7B</td><td>10–14%</td><td>Medidata, Veeva, Oracle Clinical · consolidation in RBQM software</td></tr>
+<tr><td>Decentralised trial enablement</td><td>~$3B</td><td>20%+</td><td>Science 37, Lightship · category still fragmenting</td></tr>
+<tr><td>SMO / site network services</td><td>~$6B</td><td>5–7%</td><td>Stable · regional variance</td></tr>
+<tr><td>Real-world evidence studies</td><td>~$4B</td><td>15%+</td><td>Label expansion driver · post-market safety</td></tr>
+<tr><td>Rare disease / cell &amp; gene therapy trials</td><td>~$5B</td><td>12–15%</td><td>Small N high per-patient cost</td></tr>
+</tbody></table>
+
+<h3>Top global CROs (revenue, 2025)</h3>
+<table><thead><tr><th>CRO</th><th>HQ</th><th>Revenue</th><th>Notable for Irish/Indian context</th></tr></thead><tbody>
+<tr><td>IQVIA</td><td>USA</td><td>~$15B</td><td>Dublin and Bangalore significant operations</td></tr>
+<tr><td>ICON plc</td><td>Ireland (Dublin HQ)</td><td>~$8.3B</td><td>Irish HQ · acquired PRA Health Sciences 2021</td></tr>
+<tr><td>Syneos Health / Thermo Fisher PPD</td><td>USA</td><td>~$7B</td><td>Cork + Athlone presence</td></tr>
+<tr><td>Labcorp Drug Development (Fortrea spin-out 2023)</td><td>USA</td><td>~$3B (Fortrea)</td><td>Spin-out dynamics ongoing</td></tr>
+<tr><td>Parexel</td><td>USA</td><td>~$3B</td><td>Private · EQT-owned</td></tr>
+<tr><td>Medpace</td><td>USA</td><td>~$2B</td><td>Mid-cap speciality focus · growing quickly</td></tr>
+<tr><td>WuXi AppTec</td><td>China</td><td>~$5B</td><td>Geopolitical exposure risk</td></tr>
+</tbody></table>
+
+<h2 id="2-regulatory-forces-reshaping-commercial-economics">2 · Regulatory Forces Reshaping Commercial Economics</h2>
+
+<h3>ICH E6(R3) · the 2025 quality overhaul</h3>
+<p>E6(R3) finalised January 2025 · EMA implementation July 2025 · FDA implementation September 2025. Structurally different from R2: §3.3 embeds Risk-Based Quality Management as principle, Critical-to-Quality (CtQ) factors become protocol-stage requirement, investigator responsibility language tightens, and quality-by-design thinking extends from Q8(R2) (pharma development) to trials conduct. Sponsors running R2-era SOPs in 2026 are accumulating compliance debt invisibly. The Q1 2026 FDA inspection cycle is producing observations on RBQM-implementation-depth that would not have arisen under R2.</p>
+
+<h3>EU Clinical Trials Regulation 536/2014 · CTIS fully operational</h3>
+<p>CTIS mandatory since January 2023 with full transition complete. EU-wide single-submission pathway reduces per-country overhead for multi-state studies but increases transparency burden (public disclosure of substantial trial information). Irish-based sponsors benefit from HPRA CTIS coordination; Indian sponsors targeting EU lose the familiar per-country pathway and face a steeper CTIS learning curve.</p>
+
+<h3>FDA decentralised clinical trials guidance · finalised 2024</h3>
+<p>Provides regulatory clarity for DCT components (remote assessment, home healthcare, wearables in trials) that previously lived in regulatory grey zones. Net effect: DCT adoption curve accelerates · ~25% of new protocols in 2026 include at least one decentralised element (ClinicalTrials.gov analysis · rising from ~10% in 2022).</p>
+
+<h3>ICH E8(R1) · QbD for clinical studies</h3>
+<p>In force since 2021 but under-implemented. Asks sponsors to identify critical-to-quality factors at protocol design stage rather than during execution. Integrated with E6(R3) · together these guidelines shift quality thinking from inspection-ready-for-closure to designed-in-quality-from-start. Sponsors with mature E8(R1) practice have meaningfully faster protocol-to-first-patient timelines.</p>
+
+<h3>Pharmacovigilance evolution</h3>
+<p>ICH E2A/E2D signal-detection methodology maturing · automated safety signal detection via AI becoming standard in 2026 · regulatory acceptance of algorithm-assisted safety review still emerging.</p>
+
+<h2 id="3-ireland-small-but-sophisticated">3 · Ireland · Small But Sophisticated</h2>
+<div class="market-cut"><h3><span class="flag-ie"></span>Ireland specific cut</h3>
+
+<p><strong>Scale:</strong> ~300 active trials in Ireland · approximately 5,000 Irish clinical research professionals employed directly · total sector value ~€1.2B · minor relative to Ireland's pharma manufacturing economy but punches above weight for complexity of trials hosted (oncology, rare disease, cell and gene therapy).</p>
+
+<p><strong>Structural facts:</strong></p>
+<ul>
+<li>ICON plc (Dublin HQ) is the largest indigenous clinical research organisation globally · acquired PRA Health Sciences 2021 · significant Irish employment</li>
+<li>HPRA (Health Products Regulatory Authority) coordinates CTIS submissions for Irish-site trials</li>
+<li>HRB (Health Research Board) clinical trial registry maintains Irish trial disclosure</li>
+<li>Trial sites concentrated in Dublin academic medical centres (St James's, Beaumont, Mater), Cork University Hospital, Galway University Hospitals</li>
+<li>Ireland's advantage: English-speaking, GDPR-compliant, EU-located, high scientific density (Trinity, UCD, NUI Galway · research hospital affiliations)</li>
+<li>Ireland's disadvantage: small patient population (5.1M) limits rare-disease recruitment speed unless embedded in multi-country trials</li>
+</ul>
+
+<p><strong>Trial conduct specialisations where Ireland leads Europe:</strong></p>
+<ul>
+<li>First-in-human oncology (academic medical centres partner with pharma Ireland operations)</li>
+<li>Rare-disease trials (small-patient cohort expertise)</li>
+<li>Medical device pivotal trials (leveraging Galway/Cork MedTech cluster)</li>
+</ul>
+
+<p><strong>Practitioner commercial opportunity (Irish context):</strong> mid-cap sponsor organisations and CROs implementing E6(R3) inside existing operations. Many have polished SOPs on paper but shallow RBQM practice; the gap assessment service (3.2) fills at €5,000–12,000 per engagement.</p>
+</div>
+
+<h2 id="4-india-the-volume-market">4 · India · The Volume Market</h2>
+<div class="market-cut"><h3><span class="flag-in"></span>India specific cut</h3>
+
+<p><strong>Scale:</strong> ~3,500 active trials · second-largest single-country trial-conduct market by volume globally (after US). ~50,000 direct clinical research employment. Estimated market value $1.5–2.5B with wide variance depending on counting methodology. Annual growth 12–15%.</p>
+
+<p><strong>Regulatory framework:</strong></p>
+<ul>
+<li>New Drugs and Clinical Trials Rules 2019 (NDCT Rules) replaced Schedule Y in most respects · continues to refine</li>
+<li>CDSCO · DCGI clearance pathway · central ethics committee oversight</li>
+<li>Subject Expert Committee (SEC) review for Phase 1 · independent ethics committees for subsequent phases</li>
+<li>Data Exclusivity + compensation rules · post-2013 reform cohort now mature</li>
+<li>AIIMS-Delhi + other government-affiliated sites increasingly prominent in academic trials</li>
+</ul>
+
+<p><strong>Commercial dynamics:</strong></p>
+<ul>
+<li>Global CROs operating large Bangalore/Mumbai/Hyderabad delivery centres · IQVIA, ICON, Parexel, Syneos all have 3,000+ Indian employees each</li>
+<li>Indian sponsor market maturing rapidly · Biocon, Dr Reddy's, Sun Pharma running sophisticated pipelines</li>
+<li>Contract manufacturing + clinical development integration (CMC + CDMO hybrids) emerging as distinctive Indian model</li>
+<li>Quality gap vs. US/EU trials persistent but narrowing · 2020s inspection results show meaningful improvement</li>
+</ul>
+
+<p><strong>Opportunity:</strong> Indian sponsors targeting US/EU submissions need E6(R3) gap assessment and RBQM implementation to international audit standard. Service 3.2 at $10,000–25,000 (adjusted for Indian willingness-to-pay) for sponsor engagements; retainer advisory at $3,000–5,000/month a viable entry-point.</p>
+</div>
+
+<h2 id="5-emerging-trends-2026-2028">5 · Emerging Trends · 2026–2028</h2>
+<ol>
+<li><strong>RBQM becomes operating model, not paperwork.</strong> E6(R3) implementation depth separates winners from compliance-only laggards. Sponsors with real RBQM save 15-25% on monitoring costs and recruit 20% faster. Supply of E6(R3) implementation consulting thin relative to demand.</li>
+<li><strong>AI/ML in trials crosses from experimentation to operational deployment.</strong> Site selection algorithms · risk signal detection · automated protocol authoring assistance · synthetic control arms. Regulatory acceptance still partial; 2026-2028 is the window where practice outruns guidance, creating governance challenges for quality teams.</li>
+<li><strong>Decentralised trials plateau but don't revert.</strong> Post-COVID DCT boom has settled at ~25% of protocols · further growth slow but steady. Hybrid models (some visits in-person · some remote) dominate rather than fully-decentralised.</li>
+<li><strong>Sponsor-CRO relationship restructuring.</strong> Functional service provider (FSP) model gains against full-service · sponsor preference for retained quality oversight + outsourced execution.</li>
+<li><strong>Real-world evidence trials displace some traditional post-approval commitments.</strong> EMA and FDA both accepting RWE for specific label-expansion contexts · accelerates post-approval development cycles.</li>
+<li><strong>Precision medicine trials require smaller, better-targeted sites.</strong> Ireland and India both well-positioned for rare-disease + cell/gene therapy trials · both growing relative share.</li>
+<li><strong>TMF digitisation reaches maturity.</strong> eTMF as standard · paper TMFs essentially gone by 2027 · real-time inspection-readiness becomes table stakes.</li>
+<li><strong>Global trial geopolitical realignment.</strong> US-China decoupling redistributing Asian trial-conduct demand · India, Korea, and Taiwan gaining share.</li>
+</ol>
+
+<div class="diff"><div class="tag">★ The Differentiator Layer · What Standard Reports Miss</div>
+<h3>Risk-Based Quality Management as the Real Moat</h3>
+
+<p>Every major clinical trials market report treats E6(R3) compliance as a cost line · a "regulatory update" that sponsors and CROs absorb. The reports are correct that it is compliance work; they miss that the <strong>implementation depth gradient is massive, and the commercially superior operators are on the deep end of it.</strong></p>
+
+<p>Consider three sponsor archetypes navigating E6(R3) in 2026:</p>
+
+<p><strong>Archetype A · Compliance surface.</strong> SOPs updated for R3 language · CtQ factor table added to protocols as a formality · central monitoring dashboard purchased from a vendor · monthly risk-review meeting on the calendar. Inspectors find paperwork compliant; practice hasn't changed. Cost: modest one-time update spend + ongoing dashboard license. Value: regulatory minimum met; zero operational advantage.</p>
+
+<p><strong>Archetype B · Integrated implementation.</strong> CtQ factors drive monitoring plan design protocol-by-protocol · QTLs and KRIs are live and escalate · central monitoring has operational authority over on-site visit frequency · management review actually reviews RBQM outputs. Inspectors find R3 practice working. Cost: meaningful change-management investment + training + SOP re-design. Value: 15-20% lower monitoring spend · 15-20% faster recruitment · meaningfully reduced post-approval risk.</p>
+
+<p><strong>Archetype C · Competitive moat.</strong> RBQM outputs feed sponsor strategic decisions (which sites to expand, which indications to pursue, how to price risk in new partnerships) · Critical-to-Quality thinking extends to commercial decisions · Quality function reports into business decisions, not just compliance. Inspectors find mature practice with strategic integration. Value: meaningful market share gains against slower competitors.</p>
+
+<p>In 2026, ~70% of sponsors are Archetype A. ~25% are Archetype B. ~5% are Archetype C. The arbitrage is <strong>helping Archetype A sponsors climb to Archetype B in a 3–4 month engagement</strong>, with mature governance architecture that can continue to Archetype C over 18 months.</p>
+
+<p><strong>The cross-domain dimension:</strong> E6(R3) §3.3's quality management architecture is operationally identical to ICH Q10's PQS framework for pharma manufacturing and QMSR Clause 4.1.4 for devices. Sponsors running integrated pharma-plus-device pipelines (increasingly common in combination-product land) have a structural opportunity to unify three quality management systems into one governance architecture. Single-domain consultants cannot see this. Practitioners with cross-domain experience can.</p>
+
+<p><strong>Commercial window:</strong> E6(R3) gap assessment services are priced €5,000–12,000 in the SME-mid-cap sponsor segment. Cross-domain audits spanning E6(R3) + pharma PQS + device QMSR price at €8,000–18,000. Demand concentrated in 2026-2027 as the FDA/EMA enforcement pattern post-R3-effective stabilises.</p>
+</div>
+
+<h2 id="6-competitive-gaps-where-supply-is-thin">6 · Competitive Gaps · Where Supply Is Thin</h2>
+<table><thead><tr><th>Gap</th><th>Why it exists</th><th>Window</th></tr></thead><tbody>
+<tr><td>Mid-cap sponsor E6(R3) implementation depth consulting</td><td>Big CROs sell R3 training modules; few consultants translate to sustained practice</td><td>€5,000–12,000 per engagement · 4-week format</td></tr>
+<tr><td>Indian sponsor → US/EU submission E6(R3) readiness</td><td>Global CROs price out mid-cap Indian sponsors · domestic consultants rarely have US/EU inspection experience</td><td>$10,000–25,000 · remote-first</td></tr>
+<tr><td>Cross-domain quality integration (pharma + device combination product)</td><td>Regulatory specialists work one domain · organisations combine pharma + device in one pipeline</td><td>€8,000–18,000 flagship</td></tr>
+<tr><td>RBQM implementation vs. RBQM software</td><td>Software vendors sold platforms · implementation expertise didn't scale</td><td>€8,000–15,000 · retained advisory</td></tr>
+<tr><td>CTIS transition coaching for Indian/US sponsors entering EU</td><td>CTIS is unfamiliar to non-EU sponsors · internal EU regulatory teams over-stretched</td><td>€6,000–14,000 per trial programme</td></tr>
+</tbody></table>
+
+<h2 id="7-commercial-implications-practitioner-actions">7 · Commercial Implications · Practitioner Actions</h2>
+<ol>
+<li><strong>Service 3.2 (E6(R3) Gap Assessment) is a primary offering</strong> at €5,000–12,000 · 4-week structured engagement · build 2 cases in 2026 Q2 for testimonial base</li>
+<li><strong>Add cross-domain integration service</strong> for sponsors running pharma + device pipelines · priced at €8,000–18,000</li>
+<li><strong>Open Indian-sponsor track</strong> for remote E6(R3) readiness support targeting US/EU submission · initial pricing $10,000–20,000</li>
+<li><strong>Content priorities:</strong> "RBQM in practice vs. in slides" article · "E6(R3) at 12 months · five things inspectors are actually finding" · "CtQ factors that actually drive monitoring plans"</li>
+<li><strong>Podcast angle:</strong> Episode on RBQM-as-operating-model · guest slot for mature sponsor QA lead (anonymised)</li>
+<li><strong>Do not enter:</strong> first-in-human GCP on a routine basis (capability gap · requires specialised trial-level experience not easily built consultatively)</li>
+</ol>
+
+<h2 id="8-risk-register">8 · Risk Register</h2>
+<ul>
+<li><strong>FDA inspection focus shifts to PV signal detection AI · less RBQM attention.</strong> Would soften the gap-assessment urgency curve.</li>
+<li><strong>Major CRO price war.</strong> If Top 5 compress FSP pricing, sponsor insourcing of quality oversight could increase consulting demand.</li>
+<li><strong>Indian regulatory misstep on high-profile trial.</strong> Could slow US/EU confidence in Indian-conducted pivotal trials · affects sponsor geography choice.</li>
+<li><strong>EU AI Act + MDR + CTR intersection clarifies.</strong> Creates clarity for AI-in-trials governance · existing uncertainty creates consulting demand.</li>
+</ul>
+
+<div class="srcs"><h3 style="margin-top:0">Sources &amp; Methodology</h3>
+<ul>
+<li>IQVIA Pipeline Intelligence · CRO Services market reports 2025-2026</li>
+<li>Evaluate Pharma Clinical Trials Market forecast</li>
+<li>ISR (Industry Standard Research) CRO Industry Report 2025</li>
+<li>ClinicalTrials.gov registry (analysis Q1 2026)</li>
+<li>EudraCT / CTIS public disclosure data</li>
+<li>HPRA Annual Report 2024-25 · HRB Clinical Trials Ireland data</li>
+<li>CDSCO India annual reports · DCGI trial approval data</li>
+<li>ICH E6(R3) · ICH E8(R1) · ICH E9(R1) final guidelines</li>
+<li>EU CTR 536/2014 · EMA CTIS technical documentation</li>
+<li>FDA RBM guidance · Decentralized Clinical Trials guidance 2024</li>
+<li>Author's Clinical Trials practice · Genechth operational experience</li>
+</ul></div>
+  </main>
+  <aside class="buy-rail"><div class="sample-box"><h5>Want a preview?</h5><p>Request a free executive-brief sample · no payment · email reply.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0AThank%20you.">Request Free Sample</a></div><div class="buy-box"><div class="head">Pricing &amp; Licensing</div><div class="indicative">⚑ Indicative pricing · contact for current</div><div class="tiers"><div class="tier"><div class="row"><span class="label">Single-User License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Full report PDF + Excel data files · 1 user · 12-month updates.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Single-user%20license%20pricing%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29%20%C2%B7%20Single-User%20License.%0A%0AThank%20you.">Get Pricing</a></div><div class="tier"><div class="row"><span class="label">Corporate License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Multi-user · all data files · 30-min analyst session · customization.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Corporate%20license%20quote%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29%20%C2%B7%20Corporate%20License.%0A%0AThank%20you.">Get a Quote</a></div></div><div class="extras"><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0AThank%20you.">📅 Speak to analyst</a><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0ADescribe%20customization%3A%0A%0A">✂️ Customize this report</a></div></div><div class="details-box"><div class="head">Report Details</div><dl><dt>Report ID</dt><dd>MRA-REP-003</dd><dt>Tier</dt><dd>Full Report</dd><dt>Author</dt><dd>Sunita Nawale</dd><dt>Published</dt><dd>2026-04-22</dd><dt>Currency</dt><dd>Current as of 2026-04</dd><dt>Horizon</dt><dd>2026 – 2030</dd></dl></div></aside>
+</div>
+
+<footer class="foot"><div class="foot-inner"><div><h5>iFeed Market Research</h5><p>Regulator-grade market intelligence across bioanalytical, bioequivalence, clinical trials, governance, LIMS, medical devices and AI in healthcare. Operator-built · evidence-first.</p></div><div><h5>Get in touch</h5><ul><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0AThank%20you.">Speak to analyst</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Clinical%20Trials%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-003%29.%0A%0ADescribe%20customization%3A%0A%0A">Request custom research</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe to digest</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a></li></ul></div></div><div class="copy">© 2026 iFeed Market Research · Pricing indicative · contact for current · upbringing.eipfm@outlook.com</div></footer>
+
+</body>
+</html>

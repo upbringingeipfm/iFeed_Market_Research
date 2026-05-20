@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Medical Devices · Global Market with Irish &amp;amp; Indian Cuts · iFeed Market Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bone: #FAFAF7;
+  --white: #FFF;
+  --ink: #0D0D0E;
+  --ink-soft: #3A3A3D;
+  --mute: #8E8E93;
+  --hair: #E5E5EA;
+  --hair-2: #D5D5D8;
+  --sage: #7A9B86;
+  --sage-deep: #4A6B56;
+  --sage-tint: #E8EEEA;
+  --gold: #B89868;
+  --gold-deep: #8E6F42;
+  --gold-tint: #F3EDE0;
+  --signal: #C4432B;
+  --signal-tint: #F7E4DE;
+  --f-serif: "Source Serif 4", Georgia, serif;
+  --f-ui: "Inter", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink-soft);
+  font-family: var(--f-ui);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--sage-deep); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ─── Utility bar (dark) ─── */
+.util {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 7px 24px;
+  font-size: 11px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.util .left { display: flex; gap: 16px; }
+.util .right { display: flex; gap: 16px; }
+.util a { color: var(--bone); font-family: var(--f-mono); letter-spacing: 0.04em; }
+.util .sep { color: var(--mute); }
+
+/* ─── Sticky main header ─── */
+.hdr {
+  background: var(--white);
+  border-bottom: 1px solid var(--hair);
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.hdr .brand { display: flex; align-items: baseline; gap: 6px; }
+.hdr .wm {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.hdr .wm em { font-style: italic; color: var(--sage-deep); }
+.hdr .dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+.hdr .tag {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding-left: 10px;
+  border-left: 1px solid var(--hair);
+  margin-left: 10px;
+}
+.hdr nav ul {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; gap: 20px; justify-content: center;
+}
+.hdr nav a {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.hdr nav a:hover {
+  color: var(--ink);
+  border-color: var(--sage-deep);
+  text-decoration: none;
+}
+.hdr .cta {
+  padding: 7px 16px;
+  background: var(--sage-deep);
+  color: var(--white) !important;
+  border-radius: 5px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.hdr .cta:hover { background: var(--ink); text-decoration: none; }
+
+/* ─── Breadcrumb ─── */
+.breadcrumb {
+  background: var(--bone);
+  padding: 10px 24px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--hair);
+}
+.breadcrumb a { color: var(--mute); }
+.breadcrumb a:hover { color: var(--sage-deep); text-decoration: none; }
+.breadcrumb .sep { margin: 0 8px; color: var(--hair-2); }
+.breadcrumb .here { color: var(--ink); }
+
+/* ─── Hero ─── */
+.hero {
+  background: var(--bone);
+  padding: 40px 24px 48px;
+  border-bottom: 1px solid var(--hair);
+}
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.hero .eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-family: var(--f-serif);
+  font-weight: 300;
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--ink);
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+  line-height: 1.14;
+  max-width: 880px;
+}
+.hero h1 em { font-style: italic; color: var(--sage-deep); font-weight: 400; }
+.hero .lede {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 760px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 18px 0 0;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.03em;
+}
+.hero-meta .m strong {
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-weight: 600;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+/* Hero key numbers (real market metrics · extracted from .stat-grid) */
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+  max-width: 900px;
+}
+.hero-metrics .km {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--sage-deep);
+  padding: 12px 14px;
+  border-radius: 0 5px 5px 0;
+}
+.hero-metrics .km .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+}
+.hero-metrics .km .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Hero CTA row (under metrics · simple action buttons · matches Precedence) */
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+.hero-actions .btn {
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 500;
+  border: 1px solid var(--sage-deep);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.hero-actions .btn-primary { background: var(--sage-deep); color: var(--white); }
+.hero-actions .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+.hero-actions .btn-secondary { background: var(--white); color: var(--sage-deep); }
+.hero-actions .btn-secondary:hover { background: var(--sage-tint); }
+
+/* ─── 3-col page grid (target ~1080px to fit cockpit iframe) ─── */
+.page-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  display: grid;
+  grid-template-columns: 200px 1fr 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Left rail · sticky TOC */
+.toc-rail {
+  position: sticky;
+  top: 80px;
+  font-size: 12px;
+}
+.toc-rail h5 {
+  font-family: var(--f-ui);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+  margin: 0 0 12px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hair);
+}
+.toc-rail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: toc;
+}
+.toc-rail li {
+  counter-increment: toc;
+  margin-bottom: 9px;
+  position: relative;
+  padding-left: 24px;
+}
+.toc-rail li::before {
+  content: counter(toc, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.toc-rail a {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+  display: block;
+}
+.toc-rail a:hover { color: var(--sage-deep); text-decoration: none; }
+.toc-rail .toc-more {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--hair);
+  font-size: 11px;
+  color: var(--mute);
+  font-family: var(--f-mono);
+  letter-spacing: 0.04em;
+}
+
+/* Center · report content */
+.content {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.content h2 {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin: 40px 0 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hair);
+  scroll-margin-top: 72px;
+}
+.content h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 6px; }
+.content h3 {
+  font-family: var(--f-serif);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 22px 0 10px;
+}
+.content h4 {
+  font-family: var(--f-ui);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--ink);
+  margin: 18px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.content p { margin: 0 0 13px; color: var(--ink-soft); }
+.content strong { color: var(--ink); font-weight: 600; }
+.content em { font-style: italic; }
+.content ul, .content ol { padding-left: 22px; margin: 4px 0 14px; }
+.content li { margin-bottom: 7px; }
+.content li strong { color: var(--ink); }
+.content a {
+  color: var(--sage-deep);
+  border-bottom: 1px solid color-mix(in srgb, var(--sage-deep) 30%, transparent);
+}
+.content a:hover { border-bottom-color: var(--sage-deep); text-decoration: none; }
+.content hr { border: none; border-top: 1px solid var(--hair); margin: 24px 0; }
+.content code {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.content blockquote {
+  border-left: 3px solid var(--sage);
+  background: var(--sage-tint);
+  margin: 16px 0;
+  padding: 12px 18px;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Executive summary */
+.content .exec {
+  background: var(--sage-tint);
+  border: 1px solid color-mix(in srgb, var(--sage) 25%, var(--hair));
+  border-left: 4px solid var(--sage-deep);
+  padding: 20px 24px;
+  border-radius: 0 6px 6px 0;
+  margin: 24px 0 28px;
+}
+.content .exec h4 {
+  font-family: var(--f-mono);
+  color: var(--sage-deep);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin: 0 0 8px;
+}
+.content .exec p {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Stat grid (in body · separate from hero metrics) */
+.content .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+.content .stat {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--gold-deep);
+  border-radius: 0 5px 5px 0;
+  padding: 12px 14px;
+}
+.content .stat .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+  margin-bottom: 4px;
+}
+.content .stat .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Diff / highlight */
+.content .diff {
+  background: var(--gold-tint);
+  border: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  border-left: 4px solid var(--gold-deep);
+  padding: 18px 22px;
+  margin: 22px 0;
+  border-radius: 0 6px 6px 0;
+}
+.content .diff .tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--gold-deep);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.content .diff h3 { color: var(--gold-deep); margin: 0 0 8px; }
+
+/* Market cut */
+.content .market-cut {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 14px 0;
+}
+.content .market-cut h3 { margin-top: 0; }
+
+/* Tables */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 12.5px;
+}
+.content table thead th {
+  text-align: left;
+  padding: 9px 11px;
+  border-bottom: 2px solid var(--hair);
+  font-family: var(--f-mono);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mute);
+  background: var(--bone);
+}
+.content table tbody td {
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--hair);
+  color: var(--ink);
+  vertical-align: top;
+}
+.content table tbody tr:nth-child(odd) { background: var(--bone); }
+
+/* Sources */
+.content .srcs {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 32px 0 0;
+  font-size: 12px;
+  color: var(--mute);
+}
+.content .srcs h4 { color: var(--ink-soft); margin: 0 0 6px; }
+.content .srcs ul { margin: 4px 0 0 18px; }
+.content .srcs li { color: var(--mute); font-size: 11.5px; }
+
+/* ─── Right rail · sticky pricing + details ─── */
+.buy-rail {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sample request (matches Precedence "Ask For Sample" pattern · separate from priced tiers) */
+.sample-box {
+  background: var(--white);
+  border: 1px solid var(--sage-deep);
+  border-radius: 6px;
+  padding: 16px 18px;
+  text-align: center;
+}
+.sample-box h5 {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.sample-box p {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+.sample-box .btn {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  background: var(--sage-deep);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.sample-box .btn:hover { background: var(--ink); text-decoration: none; }
+
+/* Pricing box (paid tiers only · per Sunita's 2-level paid · Single + Corporate) */
+.buy-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.buy-box .head {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 12px 16px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.buy-box .indicative {
+  background: var(--gold-tint);
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  padding: 8px 16px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tier {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hair);
+}
+.tier:last-child { border-bottom: 0; }
+.tier .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.tier .label {
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tier .price {
+  font-family: var(--f-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+}
+.tier .price.indicative { font-size: 12px; color: var(--gold-deep); font-style: italic; font-weight: 500; }
+.tier .desc {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin: 4px 0 10px;
+}
+.tier .btn {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--sage-deep);
+  text-align: center;
+  background: var(--white);
+  color: var(--sage-deep);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.tier .btn:hover { background: var(--sage-tint); text-decoration: none; }
+.buy-box .extras {
+  padding: 11px 16px;
+  border-top: 1px solid var(--hair);
+  background: var(--bone);
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.buy-box .extras a {
+  color: var(--ink-soft);
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.buy-box .extras a:hover { color: var(--sage-deep); }
+
+/* Details box */
+.details-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.details-box .head {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--hair);
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.details-box dl {
+  margin: 0;
+  padding: 11px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 11.5px;
+}
+.details-box dt {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+}
+.details-box dd { margin: 0; color: var(--ink); font-weight: 500; }
+
+/* ─── Footer ─── */
+.foot {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 40px 24px 24px;
+  margin-top: 48px;
+}
+.foot-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+}
+.foot h5 {
+  font-family: var(--f-ui);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.foot ul { list-style: none; padding: 0; margin: 0; }
+.foot li { margin-bottom: 7px; }
+.foot a { color: var(--bone); font-size: 12px; }
+.foot a:hover { color: var(--gold); text-decoration: none; }
+.foot p { color: color-mix(in srgb, var(--bone) 75%, var(--mute)); font-size: 12px; line-height: 1.55; }
+.foot .copy {
+  max-width: 1120px;
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--bone) 15%, var(--ink));
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--bone) 60%, var(--mute));
+}
+
+/* Responsive · collapse below 980px (well inside Streamlit-wide iframe) */
+@media (max-width: 980px) {
+  .page-grid { grid-template-columns: 1fr; }
+  .toc-rail, .buy-rail { position: static; }
+  .hero-inner { max-width: none; }
+  .hero-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+  .hdr nav { display: none; }
+  .hero-metrics { grid-template-columns: 1fr; }
+  .foot-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="left">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">📧 upbringing.eipfm@outlook.com</a>
+  </div>
+  <div class="right">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe</a>
+    <span class="sep">·</span>
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="brand">
+    <a class="wm" href="#top">iFeed <em>Market Research</em></a>
+    <span class="dot"></span>
+    <span class="tag">Regulator-grade</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#top">Reports</a></li>
+      <li><a href="#top">Industries</a></li>
+      <li><a href="#top">Services</a></li>
+      <li><a href="#top">Methodology</a></li>
+      <li><a href="#top">About</a></li>
+    </ul>
+  </nav>
+  <a class="cta" href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0AThank%20you.">Speak to Analyst</a>
+</header>
+
+<div class="breadcrumb" id="top">
+  <a>Home</a><span class="sep">›</span>
+  <a>Reports</a><span class="sep">›</span>
+  <a>Medical Devices</a><span class="sep">›</span>
+  <span class="here">Medical Devices · Global Market with Irish &amp;amp; Indian Cuts</span>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Medical Devices · Full Report · MRA-REP-004</div>
+    <h1>Medical Devices · Global Market with Irish &amp;amp; Indian Cuts</h1>
+    <p class="lede">A cross-domain governance practitioner&#x27;s read of the global medical devices market, the Galway cluster, and the Indian device ecosystem — with analysis of where governance architecture becomes the commercial moat most reports miss.</p>
+    <div class="hero-meta"><div class="m"><strong>Author</strong>Sunita Nawale · Regulatory Quality Governance · Galway</div><div class="m"><strong>Published</strong>2026-04-22</div><div class="m"><strong>Currency</strong>Current as of 2026-04</div><div class="m"><strong>Horizon</strong>2026 – 2030</div></div>
+    <div class="hero-metrics"><div class="km"><div class="n">$580–610B</div><div class="l">Global market size · 2026</div></div><div class="km"><div class="n">5–7%</div><div class="l">CAGR · 2026 – 2030</div></div><div class="km"><div class="n">9 / 10</div><div class="l">Top global MedTech firms in Ireland</div></div><div class="km"><div class="n">~80,000</div><div class="l">Irish MedTech employment</div></div><div class="km"><div class="n">€16B+</div><div class="l">Irish MedTech exports annually</div></div><div class="km"><div class="n">~$14B</div><div class="l">Indian medical device market 2026</div></div></div>
+    <div class="hero-actions"><a class="btn btn-primary" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0AThank%20you.">Request Free Sample</a><a class="btn btn-secondary" href="#1-global-market-landscape">Table of Contents</a></div>
+  </div>
+</section>
+
+<div class="page-grid">
+  <aside class="toc-rail"><h5>On this page</h5><ol><li><a href="#1-global-market-landscape">1 · Global Market Landscape</a></li><li><a href="#2-regulatory-forces-reshaping-the-commercial-map">2 · Regulatory Forces Reshaping the Commercial Map</a></li><li><a href="#3-ireland-medtech-the-galway-advantage">3 · Ireland MedTech · The Galway Advantage</a></li><li><a href="#4-india-medtech-the-fastest-growing-regional-cut">4 · India MedTech · The Fastest-Growing Regional Cut</a></li><li><a href="#5-emerging-trends-2026-2028-horizon">5 · Emerging Trends · 2026–2028 Horizon</a></li><li><a href="#6-competitive-gaps-where-supply-is-thin">6 · Competitive Gaps · Where Supply Is Thin</a></li><li><a href="#7-commercial-implications-what-to-actually-do">7 · Commercial Implications · What to Actually Do</a></li><li><a href="#8-risk-register-things-that-change-this-picture">8 · Risk Register · Things That Change This Picture</a></li></ol></aside>
+  <main class="content">
+    <div class="exec">
+<h4>Executive Summary</h4>
+<p>The global medical devices market is approaching <strong>$600B</strong> in 2026 with a steady 5–7% CAGR into 2030. Beneath the headline growth, three tectonic shifts are reshaping commercial economics: the FDA QMSR transition (effective February 2026), the EU MDR/IVDR compliance saturation, and AI/ML-enabled device approvals crossing into mainstream. Ireland punches well above its weight — 9 of the global top 10 MedTech manufacturers operate here, with Galway emerging as the highest-density mid-cap cluster in Europe. India's device market is the fastest-growing regional cut globally (~15% CAGR), but quality infrastructure lags demand. The commercial moat is no longer device innovation alone — it is <strong>governance architecture</strong> that converts regulatory overhead into audit-defensible differentiation. This report identifies the specific windows where cross-domain governance expertise creates a pricing premium unavailable to single-domain specialists.</p>
+</div>
+
+
+
+<h2 id="1-global-market-landscape">1 · Global Market Landscape</h2>
+
+<h3>Size, growth, and structural dynamics</h3>
+<p>The global medical devices market in 2026 sits in the $580–610B range, with published estimates from Evaluate MedTech, IQVIA, Fortune Business Insights, and MarketsAndMarkets converging on roughly $600B with variance driven by category inclusion (diagnostics + in vitro + traditional devices). Expected CAGR to 2030 is 5–7%, pushing the market toward $800B by decade-end.</p>
+<p>Three demand engines dominate: (1) ageing populations in OECD markets driving cardiovascular, orthopaedic, and monitoring device demand; (2) emerging-market middle-class expansion creating first-time access to implants and imaging; (3) digital health and AI/ML-enabled software as a medical device (SaMD) unlocking a new category that didn't exist as a commercial vertical five years ago.</p>
+
+<h3>Segment breakdown</h3>
+<table>
+<thead><tr><th>Segment</th><th>2026 Size</th><th>CAGR</th><th>Notable dynamics</th></tr></thead>
+<tbody>
+<tr><td>Cardiovascular devices</td><td>~$85B</td><td>6–8%</td><td>Ageing demand · structural heart innovation · Ireland-heavy production</td></tr>
+<tr><td>Orthopaedic &amp; spine</td><td>~$65B</td><td>4–6%</td><td>Mature · pricing pressure · robotic assistance lifting premium tier</td></tr>
+<tr><td>In vitro diagnostics (IVDs)</td><td>~$110B</td><td>5–7%</td><td>EU IVDR transition still reshaping · companion diagnostics growing</td></tr>
+<tr><td>Imaging</td><td>~$50B</td><td>4–6%</td><td>AI-enabled imaging is the hot sub-segment · 12–18% in that cut</td></tr>
+<tr><td>Surgical instruments &amp; supplies</td><td>~$100B</td><td>4–5%</td><td>Commodity pressures · high-volume · low-margin</td></tr>
+<tr><td>Diabetes care</td><td>~$30B</td><td>7–10%</td><td>CGM segment &gt; 15% CAGR · wearable integration maturing</td></tr>
+<tr><td>Patient monitoring</td><td>~$60B</td><td>7–9%</td><td>Remote monitoring post-COVID plateau · wearables integration</td></tr>
+<tr><td>AI/ML-enabled SaMD</td><td>~$9–12B</td><td>20–30%</td><td>&gt; 900 FDA-authorised AI/ML devices cumulative · CDRH AI/ML draft guidance shaping governance</td></tr>
+<tr><td>Remaining (neurovascular · ophthalmology · ENT · etc.)</td><td>~$100B</td><td>3–6%</td><td>Specialist sub-markets · innovation-driven</td></tr>
+</tbody>
+</table>
+
+<h3>Top global players (revenue-ranked, 2025 reporting)</h3>
+<table>
+<thead><tr><th>Company</th><th>HQ</th><th>Revenue (approx)</th><th>Ireland footprint</th></tr></thead>
+<tbody>
+<tr><td>Medtronic</td><td>Ireland (Dublin)</td><td>~$32B</td><td>HQ · Galway + multiple sites · 12,000+ Irish staff</td></tr>
+<tr><td>Johnson &amp; Johnson MedTech</td><td>USA</td><td>~$31B</td><td>Cork · Limerick</td></tr>
+<tr><td>Abbott (devices + diagnostics)</td><td>USA</td><td>~$27B (devices share)</td><td>Clonmel · Donegal · Dublin</td></tr>
+<tr><td>Stryker</td><td>USA</td><td>~$22B</td><td>Cork · Limerick</td></tr>
+<tr><td>Siemens Healthineers</td><td>Germany</td><td>~$22B</td><td>Limited Irish direct</td></tr>
+<tr><td>Boston Scientific</td><td>USA</td><td>~$17B</td><td>Galway (largest non-US site) · Cork · Clonmel</td></tr>
+<tr><td>Philips</td><td>Netherlands</td><td>~$19B</td><td>Limited Irish direct</td></tr>
+<tr><td>GE HealthCare</td><td>USA</td><td>~$20B</td><td>Cork</td></tr>
+<tr><td>Becton Dickinson</td><td>USA</td><td>~$20B</td><td>Limerick · Dun Laoghaire</td></tr>
+<tr><td>Baxter</td><td>USA</td><td>~$15B</td><td>Mayo · Dublin</td></tr>
+</tbody>
+</table>
+
+<h2 id="2-regulatory-forces-reshaping-the-commercial-map">2 · Regulatory Forces Reshaping the Commercial Map</h2>
+
+<h3>FDA QMSR · the 2026 inflection</h3>
+<p>The Feb 2026 QMSR effective date replaces the 1996 QSR with a framework harmonised to ISO 13485:2016. The operational change is larger than the headline suggests — Clause 4.1.4 introduces named PQS ownership, explicit architecture documentation, and evidence-based resource adequacy that most pre-2026 Quality Manuals do not satisfy. Commercial implication: a 6–12 month FDA enforcement discretion window (early signals suggest the shorter end) creates a concentrated demand spike for QMSR gap assessment services through 2026 Q3.</p>
+
+<h3>EU MDR/IVDR · the extended transition</h3>
+<p>EU MDR was fully applicable from 2021 with a staggered notified-body re-certification running into 2028. IVDR transition deadlines extend through 2028 for high-risk class items. For Irish manufacturers, the challenge is not MDR per se — it's running MDR and QMSR in parallel without duplication, which most SME-mid-cap organisations are still architecting inefficiently.</p>
+
+<h3>AI/ML regulatory frontier</h3>
+<p>FDA's AI/ML-enabled device software function pathway and Predetermined Change Control Plan (PCCP) framework matured in 2024–2025, enabling post-market model updates without re-submission. EU AI Act Article 6 classification (effective August 2026 for high-risk systems) layers on top — creating dual-regulation exposure for any ML-containing device sold in both markets.</p>
+
+<h3>MDSAP adoption curve</h3>
+<p>The single-audit programme (FDA + Canada + Brazil + Japan + Australia) has gained steady enterprise adoption. For multi-market Irish manufacturers, MDSAP alignment collapses five separate audit cycles into one — estimated 30–40% quality audit overhead reduction for organisations that complete the transition.</p>
+
+<h2 id="3-ireland-medtech-the-galway-advantage">3 · Ireland MedTech · The Galway Advantage</h2>
+
+<div class="market-cut">
+<h3><span class="flag-ie"></span>Ireland specific cut</h3>
+
+<p><strong>Scale:</strong> ~80,000 direct employment across 450+ companies. €16B+ annual exports. Represents ~4% of all Irish employment and ~10% of exports. Ranked #2 globally per capita for MedTech employment density (after Switzerland).</p>
+
+<p><strong>Clusters:</strong></p>
+<ul>
+<li><strong>Galway</strong> — cardiovascular + structural heart + neurovascular implants · Boston Scientific's largest non-US operation · Medtronic's Galway site · Creganna (TE Connectivity) · Luminate · Aerogen · Aran Biomedical · ~20,000 direct employment.</li>
+<li><strong>Cork</strong> — GE HealthCare imaging · Stryker · Johnson &amp; Johnson · Abbott Point of Care · BD.</li>
+<li><strong>Limerick</strong> — Stryker instruments · BD · J&amp;J · Cook Medical.</li>
+<li><strong>Dublin</strong> — Medtronic HQ (global) · regulatory services · software/SaMD.</li>
+<li><strong>Clonmel</strong> — Abbott · Boston Scientific.</li>
+</ul>
+
+<p><strong>Key structural facts that matter for commercial work:</strong></p>
+<ul>
+<li>~90% of Irish MedTech output is exported · primarily to the US market · making FDA regulatory changes (like QMSR) a material commercial event for essentially every Irish manufacturer.</li>
+<li>Ireland has HPRA (national regulator) but most manufacturers operate under EMA centralised, FDA direct, and notified body oversight — regulatory complexity per plant is high.</li>
+<li>The mid-cap Irish contractor ecosystem (companies in the 100–500 employee band serving the top 10 as CMOs or specialised suppliers) represents roughly 60% of firm count but carries proportionally heavier regulatory-overhead strain. This is the under-served segment for high-quality QMSR and cross-domain gap assessment work.</li>
+<li>IDA Ireland and Enterprise Ireland actively subsidise R&amp;D, regulatory readiness, and MDR transition support — a quiet but material advantage for local consultancies working with IDA-mandated Irish SMEs.</li>
+</ul>
+</div>
+
+<h2 id="4-india-medtech-the-fastest-growing-regional-cut">4 · India MedTech · The Fastest-Growing Regional Cut</h2>
+
+<div class="market-cut">
+<h3><span class="flag-in"></span>India specific cut</h3>
+
+<p><strong>Scale:</strong> ~$14B in 2026, forecast to reach $50B by 2030 per Indian government targets (actual trajectory likely $30–35B by 2030). CAGR of 15%+ makes India the fastest-growing major market globally. Imports account for ~70% of current device consumption — a deficit the government is aggressively reducing via PLI (Production-Linked Incentive) schemes.</p>
+
+<p><strong>Regulatory framework (2026 state):</strong></p>
+<ul>
+<li>CDSCO (Central Drugs Standard Control Organization) · DCGI enforcement · Medical Device Rules 2017 (amended 2022 and 2024)</li>
+<li>All devices now notified — voluntary-to-mandatory transition complete as of October 2023</li>
+<li>Risk-based classification (A, B, C, D) aligned loosely to EU MDR</li>
+<li>QMS compliance: ISO 13485:2016 required for Class B and above; some push toward QMSR-adjacent expectations emerging 2025–2026</li>
+<li>Adverse event reporting and post-market surveillance rules tightening · under-compliance remains widespread in practice</li>
+</ul>
+
+<p><strong>Commercial dynamics:</strong></p>
+<ul>
+<li>Domestic manufacturers (HLL · BPL · Poly Medicure · Trivitron · Sushrut Surgicals · SS Innovations) growing rapidly · PLI schemes injecting ~₹3,420 crore (~$410M) into domestic device manufacturing</li>
+<li>Contract manufacturing for global players accelerating · Pune · Chennai · Ahmedabad · Hyderabad emerging as clusters</li>
+<li>Quality gap is the persistent structural weakness — CDSCO inspections catch a meaningful share of non-compliance; FDA Warning Letter issuance to Indian device facilities rose 2022–2025</li>
+<li>IVD sub-segment dominated by import volume · significant opportunity as domestic capability builds</li>
+</ul>
+
+<p><strong>The quality gap as commercial opportunity:</strong> Indian manufacturers seeking to export to US/EU increasingly need QMSR + EU MDR + ISO 13485 harmonisation done to international audit standard. Many attempt this with single-domain consultants and find the results patchy. A governance-architect serving Indian manufacturers planning US/EU entry (especially for Class III devices or SaMD) has a large addressable market at consulting fee bands the Indian market can now support ($15,000–$50,000 engagement range for mid-cap manufacturers).</p>
+</div>
+
+<h2 id="5-emerging-trends-2026-2028-horizon">5 · Emerging Trends · 2026–2028 Horizon</h2>
+
+<ol>
+<li><strong>AI/ML-enabled devices approach commodity status in diagnostics.</strong> Imaging AI is no longer a differentiator · it's expected. Second-order competition shifts to integration, explainability, and post-market performance monitoring. Regulatory overhead doubles for dual EU AI Act + MDR compliance.</li>
+<li><strong>Cybersecurity becomes a pre-market gate, not a post-market concern.</strong> FDA 2023 cybersecurity guidance and EU NIS2 Directive force cybersecurity into QMS and design control flows. Devices without a cybersecurity-integrated QMS start failing pre-market.</li>
+<li><strong>Sustainability reporting enters device QMS.</strong> EU CSRD (Corporate Sustainability Reporting Directive) applies to most large MedTech operators from 2025. Lifecycle assessment data for devices increasingly requested during tenders (especially European public procurement).</li>
+<li><strong>Decentralised manufacturing and 3D printing in-hospital.</strong> Point-of-care production of patient-specific implants challenges traditional QMS boundaries — who is "the manufacturer" under QMSR when the hospital 3D-prints a surgical guide from a software vendor's file?</li>
+<li><strong>Post-market surveillance data becomes a strategic asset.</strong> Real-world evidence (RWE) from connected devices feeds both regulatory submissions and commercial arguments. Organisations with mature PMS/PMCF frameworks accelerate label expansions; those without lose speed.</li>
+<li><strong>Consolidation of mid-cap Irish contractors.</strong> QMSR transition costs disproportionately burden the 100–500 employee band — expect 2026–2028 to see 15–25% of Irish mid-cap contractors acquired by global players or consolidated into local champions.</li>
+<li><strong>India becomes a regulatory-expertise exporter.</strong> As Indian CDSCO professionalises (CDSCO modernisation programme continues), Indian regulatory talent becomes global — consulting firms with Indian delivery arms gain cost advantage in served markets.</li>
+</ol>
+
+<div class="diff">
+<div class="tag">★ The Differentiator Layer · What Standard Reports Miss</div>
+<h3>Cross-Domain Governance as the New Moat</h3>
+
+<p>Every major market report (Evaluate MedTech, IQVIA, Fortune Business Insights, MarketsAndMarkets) treats medical devices, pharma, and clinical trials as separate markets. This framing is descriptively accurate — the finished goods are different, the regulations are technically different — but it misses a structural reality now becoming commercially visible.</p>
+
+<p><strong>The same management-responsibility architecture governs all three domains.</strong> ICH Q10 (pharma PQS · 2008), QMSR Clause 4.1.4 (devices · 2026), and ICH E6(R3) §3.3 (clinical trials · 2025) all require: named PQS ownership · explicit architecture documentation · resource-adequacy evidence · management review with resource-allocation decisions. Written by different bodies, in different decades, for different industries — but operationally isomorphic.</p>
+
+<p>This matters commercially for three reasons:</p>
+
+<ol>
+<li><strong>Organisations spanning domains have enormous hidden redundancy.</strong> A typical Irish Boston Scientific or Medtronic site runs device QMS (13485), bioanalytical compliance for materials testing (ICH M10 adjacent), clinical evaluation (MDR Article 61 + E6 influence), and increasingly AI/ML governance (42001) — with four separate quality leads, four separate management reviews, four overlapping-but-not-unified CAPA systems. A cross-domain governance audit can identify 30–50% overlap for consolidation.</li>
+
+<li><strong>Single-domain consultants structurally cannot surface this overlap.</strong> A pure devices consultant sees the QMS; a pure clinical trials consultant sees RBQM; a pure bioanalytical consultant sees ISR failure patterns. Only a practitioner who has worked across all three domains — in practice, not in theory — can see the cross-cutting architecture. This is a positioning claim that cannot be back-fitted.</li>
+
+<li><strong>Inspector trending is moving the same direction.</strong> FDA, EMA, and MHRA inspectors increasingly request cross-domain integration evidence during inspections of companies that span multiple regulated activities. "Show us how your CAPA system connects to your design controls connects to your pharmacovigilance" is the question that produces most observations in 2025–2026 inspection reports.</li>
+</ol>
+
+<p><strong>The commercial window:</strong> there is essentially no consulting supply for cross-domain governance audits at the mid-cap level. The Big 4 (Deloitte · EY · KPMG · PwC) have the horizontal scale but deliver via domain-siloed teams at €400–600/hour enterprise rates. Specialist consultancies serve one domain deeply. A practitioner-led cross-domain service at €8,000–18,000 for a 6-week engagement sits in an uncontested price-quality window for Galway mid-cap contractors, Indian manufacturers planning US/EU entry, and the small-but-growing cohort of organisations operating diversified regulated portfolios.</p>
+
+<p><strong>Cross-reference for practice:</strong> this is the flagship service positioning in Services §3.5 · supported by the FDA QMSR Deep-Dive · QMSR ↔ Q10 ↔ E6(R3) convergence mapped in the Regulatory Landscape Master Map §5.</p>
+</div>
+
+<h2 id="6-competitive-gaps-where-supply-is-thin">6 · Competitive Gaps · Where Supply Is Thin</h2>
+
+<table>
+<thead><tr><th>Gap</th><th>Why it exists</th><th>Commercial window for a solo practitioner</th></tr></thead>
+<tbody>
+<tr><td>Cross-domain QMS audit for mid-cap Irish contractors</td><td>Big 4 too expensive · specialists too narrow · internal hire too slow</td><td>€8,000–18,000 per engagement · 2–3 per quarter sustainable</td></tr>
+<tr><td>QMSR readiness for Indian export manufacturers</td><td>Indian domestic consultancies undersize regulatory rigour; global consultancies price out most Indian mid-caps</td><td>$15,000–50,000 · remote-first delivery · Indian diaspora advantage</td></tr>
+<tr><td>AI/ML + MDR dual-framework governance</td><td>Regulation evolving · few practitioners have both</td><td>€10,000–25,000 initial audit + retained advisory</td></tr>
+<tr><td>PMS/PMCF maturity assessment</td><td>EU MDR Articles 83–86 under-implemented · consultants focus on initial approval, not sustained surveillance</td><td>€5,000–12,000 per product family</td></tr>
+<tr><td>MDSAP transition planning</td><td>Disproportionately valuable for multi-market Irish SMEs; specialists not thick on ground</td><td>€10,000–25,000 structured engagement</td></tr>
+<tr><td>Content-led market education</td><td>Most Irish/Indian MedTech content is trade-publication press-release summary; practitioner-grade content is rare</td><td>Indirect — drives inbound for everything above</td></tr>
+</tbody>
+</table>
+
+<h2 id="7-commercial-implications-what-to-actually-do">7 · Commercial Implications · What to Actually Do</h2>
+
+<h3>For a cross-domain governance practitioner in Galway 2026–2028</h3>
+
+<ol>
+<li><strong>Price the cross-domain audit as a premium flagship service</strong> at €8,000–18,000 · limit to 2–3 quarterly engagements · use the rarity to support pricing.</li>
+<li><strong>Build QMSR gap assessment as the volume service</strong> at €4,500–10,000 · the Feb 2026 effective date creates 12–18 months of concentrated demand; fill capacity now.</li>
+<li><strong>Serve the mid-cap Irish contractor segment explicitly.</strong> The top 10 global players have internal teams and Big 4 contracts; the 100–500 employee band is where pricing-to-value matches.</li>
+<li><strong>Open a remote-delivery track for Indian manufacturers planning US/EU entry.</strong> Indian diaspora + timezone-compatible engagement + local regulatory familiarity creates a rare combination.</li>
+<li><strong>Do not enter SaMD/AI/ML-device governance as a primary service in 2026.</strong> The frontier is real but the practitioner depth required is D1/D2 in ISO 13485 + ISO/IEC 42001 + IEC 62304 + clinical evaluation — a 12–18 month capability build. Publish as research-note framing; offer services in 2027.</li>
+<li><strong>Build content in public continuously</strong> (iFeed weekly · podcast bi-weekly). In this market, content is the primary sourcing channel for high-fee engagements — inbound-led work prices 30–50% higher than outbound-sourced work.</li>
+</ol>
+
+<h2 id="8-risk-register-things-that-change-this-picture">8 · Risk Register · Things That Change This Picture</h2>
+
+<ul>
+<li><strong>FDA enforcement discretion window extends beyond 12 months.</strong> Low probability · would delay the QMSR demand curve by ~6 months.</li>
+<li><strong>Major consolidation wave in Irish contractors.</strong> Medium probability · reshapes the addressable mid-cap segment.</li>
+<li><strong>Indian regulatory alignment accelerates beyond forecast.</strong> Low-medium · would open Indian market for cross-border consulting work faster than projected.</li>
+<li><strong>AI/ML-enabled device regulation diverges between FDA and EU.</strong> Medium-high probability · creates dual-framework consulting demand but also confusion that reduces decision speed.</li>
+<li><strong>Economic recession in US/EU.</strong> Low-medium · consulting budgets tighten · flagship services (cross-domain audit) more resilient than volume services.</li>
+</ul>
+
+<div class="srcs">
+<h3 style="margin-top:0">Sources &amp; Methodology</h3>
+<ul>
+<li>Evaluate MedTech World Preview 2030 (published Sept 2025)</li>
+<li>IQVIA MedTech View · Q1 2026 edition</li>
+<li>Fortune Business Insights Medical Devices Market Report 2025–2032</li>
+<li>MarketsAndMarkets Medical Devices Market Global Forecast 2030</li>
+<li>IDA Ireland Life Sciences Sector Profile 2025</li>
+<li>Enterprise Ireland Medical Technology Sector Report</li>
+<li>Irish Medical Devices Association (IMDA) industry data</li>
+<li>CDSCO Annual Report 2024–25 · India Medical Device Rules 2017 with amendments</li>
+<li>FDA QMSR Final Rule · Federal Register 2024-01709</li>
+<li>EU MDR 2017/745 · EU IVDR 2017/746 · EU AI Act 2024/1689</li>
+<li>Author's direct practice · 2026 Galway QMSR gap assessment engagements (anonymised)</li>
+</ul>
+<p style="font-size:11px;color:#7a7a7a;margin-top:14px">All market size figures are 2026 published-estimate ranges · variance reflects definitional differences between sources. Author's practitioner insights are clearly separated from industry-reported data.</p>
+</div>
+  </main>
+  <aside class="buy-rail"><div class="sample-box"><h5>Want a preview?</h5><p>Request a free executive-brief sample · no payment · email reply.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0AThank%20you.">Request Free Sample</a></div><div class="buy-box"><div class="head">Pricing &amp; Licensing</div><div class="indicative">⚑ Indicative pricing · contact for current</div><div class="tiers"><div class="tier"><div class="row"><span class="label">Single-User License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Full report PDF + Excel data files · 1 user · 12-month updates.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Single-user%20license%20pricing%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29%20%C2%B7%20Single-User%20License.%0A%0AThank%20you.">Get Pricing</a></div><div class="tier"><div class="row"><span class="label">Corporate License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Multi-user · all data files · 30-min analyst session · customization.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Corporate%20license%20quote%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29%20%C2%B7%20Corporate%20License.%0A%0AThank%20you.">Get a Quote</a></div></div><div class="extras"><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0AThank%20you.">📅 Speak to analyst</a><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0ADescribe%20customization%3A%0A%0A">✂️ Customize this report</a></div></div><div class="details-box"><div class="head">Report Details</div><dl><dt>Report ID</dt><dd>MRA-REP-004</dd><dt>Tier</dt><dd>Full Report</dd><dt>Author</dt><dd>Sunita Nawale · Regulatory Quality Governance · Galway</dd><dt>Published</dt><dd>2026-04-22</dd><dt>Currency</dt><dd>Current as of 2026-04</dd><dt>Horizon</dt><dd>2026 – 2030</dd></dl></div></aside>
+</div>
+
+<footer class="foot"><div class="foot-inner"><div><h5>iFeed Market Research</h5><p>Regulator-grade market intelligence across bioanalytical, bioequivalence, clinical trials, governance, LIMS, medical devices and AI in healthcare. Operator-built · evidence-first.</p></div><div><h5>Get in touch</h5><ul><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0AThank%20you.">Speak to analyst</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Medical%20Devices%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-004%29.%0A%0ADescribe%20customization%3A%0A%0A">Request custom research</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe to digest</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a></li></ul></div></div><div class="copy">© 2026 iFeed Market Research · Pricing indicative · contact for current · upbringing.eipfm@outlook.com</div></footer>
+
+</body>
+</html>

@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Bioanalytical Services · Global Market with Irish &amp;amp; Indian Cuts · iFeed Market Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bone: #FAFAF7;
+  --white: #FFF;
+  --ink: #0D0D0E;
+  --ink-soft: #3A3A3D;
+  --mute: #8E8E93;
+  --hair: #E5E5EA;
+  --hair-2: #D5D5D8;
+  --sage: #7A9B86;
+  --sage-deep: #4A6B56;
+  --sage-tint: #E8EEEA;
+  --gold: #B89868;
+  --gold-deep: #8E6F42;
+  --gold-tint: #F3EDE0;
+  --signal: #C4432B;
+  --signal-tint: #F7E4DE;
+  --f-serif: "Source Serif 4", Georgia, serif;
+  --f-ui: "Inter", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink-soft);
+  font-family: var(--f-ui);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--sage-deep); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ─── Utility bar (dark) ─── */
+.util {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 7px 24px;
+  font-size: 11px;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+.util .left { display: flex; gap: 16px; }
+.util .right { display: flex; gap: 16px; }
+.util a { color: var(--bone); font-family: var(--f-mono); letter-spacing: 0.04em; }
+.util .sep { color: var(--mute); }
+
+/* ─── Sticky main header ─── */
+.hdr {
+  background: var(--white);
+  border-bottom: 1px solid var(--hair);
+  padding: 12px 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.hdr .brand { display: flex; align-items: baseline; gap: 6px; }
+.hdr .wm {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 22px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+.hdr .wm em { font-style: italic; color: var(--sage-deep); }
+.hdr .dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: translateY(-3px);
+}
+.hdr .tag {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding-left: 10px;
+  border-left: 1px solid var(--hair);
+  margin-left: 10px;
+}
+.hdr nav ul {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; gap: 20px; justify-content: center;
+}
+.hdr nav a {
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+.hdr nav a:hover {
+  color: var(--ink);
+  border-color: var(--sage-deep);
+  text-decoration: none;
+}
+.hdr .cta {
+  padding: 7px 16px;
+  background: var(--sage-deep);
+  color: var(--white) !important;
+  border-radius: 5px;
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.hdr .cta:hover { background: var(--ink); text-decoration: none; }
+
+/* ─── Breadcrumb ─── */
+.breadcrumb {
+  background: var(--bone);
+  padding: 10px 24px;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--hair);
+}
+.breadcrumb a { color: var(--mute); }
+.breadcrumb a:hover { color: var(--sage-deep); text-decoration: none; }
+.breadcrumb .sep { margin: 0 8px; color: var(--hair-2); }
+.breadcrumb .here { color: var(--ink); }
+
+/* ─── Hero ─── */
+.hero {
+  background: var(--bone);
+  padding: 40px 24px 48px;
+  border-bottom: 1px solid var(--hair);
+}
+.hero-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.hero .eyebrow {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero h1 {
+  font-family: var(--f-serif);
+  font-weight: 300;
+  font-size: clamp(26px, 3.4vw, 38px);
+  color: var(--ink);
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+  line-height: 1.14;
+  max-width: 880px;
+}
+.hero h1 em { font-style: italic; color: var(--sage-deep); font-weight: 400; }
+.hero .lede {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  max-width: 760px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin: 18px 0 0;
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  color: var(--mute);
+  letter-spacing: 0.03em;
+}
+.hero-meta .m strong {
+  color: var(--ink);
+  font-family: var(--f-ui);
+  font-weight: 600;
+  margin-right: 6px;
+  font-size: 11px;
+}
+
+/* Hero key numbers (real market metrics · extracted from .stat-grid) */
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 24px;
+  max-width: 900px;
+}
+.hero-metrics .km {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--sage-deep);
+  padding: 12px 14px;
+  border-radius: 0 5px 5px 0;
+}
+.hero-metrics .km .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+}
+.hero-metrics .km .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* Hero CTA row (under metrics · simple action buttons · matches Precedence) */
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+.hero-actions .btn {
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 500;
+  border: 1px solid var(--sage-deep);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.hero-actions .btn-primary { background: var(--sage-deep); color: var(--white); }
+.hero-actions .btn-primary:hover { background: var(--ink); border-color: var(--ink); }
+.hero-actions .btn-secondary { background: var(--white); color: var(--sage-deep); }
+.hero-actions .btn-secondary:hover { background: var(--sage-tint); }
+
+/* ─── 3-col page grid (target ~1080px to fit cockpit iframe) ─── */
+.page-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 24px;
+  display: grid;
+  grid-template-columns: 200px 1fr 260px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Left rail · sticky TOC */
+.toc-rail {
+  position: sticky;
+  top: 80px;
+  font-size: 12px;
+}
+.toc-rail h5 {
+  font-family: var(--f-ui);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--mute);
+  margin: 0 0 12px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--hair);
+}
+.toc-rail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: toc;
+}
+.toc-rail li {
+  counter-increment: toc;
+  margin-bottom: 9px;
+  position: relative;
+  padding-left: 24px;
+}
+.toc-rail li::before {
+  content: counter(toc, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.toc-rail a {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.4;
+  display: block;
+}
+.toc-rail a:hover { color: var(--sage-deep); text-decoration: none; }
+.toc-rail .toc-more {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--hair);
+  font-size: 11px;
+  color: var(--mute);
+  font-family: var(--f-mono);
+  letter-spacing: 0.04em;
+}
+
+/* Center · report content */
+.content {
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.content h2 {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  margin: 40px 0 14px;
+  padding-top: 22px;
+  border-top: 1px solid var(--hair);
+  scroll-margin-top: 72px;
+}
+.content h2:first-of-type { border-top: 0; padding-top: 0; margin-top: 6px; }
+.content h3 {
+  font-family: var(--f-serif);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 22px 0 10px;
+}
+.content h4 {
+  font-family: var(--f-ui);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--ink);
+  margin: 18px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.content p { margin: 0 0 13px; color: var(--ink-soft); }
+.content strong { color: var(--ink); font-weight: 600; }
+.content em { font-style: italic; }
+.content ul, .content ol { padding-left: 22px; margin: 4px 0 14px; }
+.content li { margin-bottom: 7px; }
+.content li strong { color: var(--ink); }
+.content a {
+  color: var(--sage-deep);
+  border-bottom: 1px solid color-mix(in srgb, var(--sage-deep) 30%, transparent);
+}
+.content a:hover { border-bottom-color: var(--sage-deep); text-decoration: none; }
+.content hr { border: none; border-top: 1px solid var(--hair); margin: 24px 0; }
+.content code {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+.content blockquote {
+  border-left: 3px solid var(--sage);
+  background: var(--sage-tint);
+  margin: 16px 0;
+  padding: 12px 18px;
+  font-style: italic;
+  color: var(--ink-soft);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Executive summary */
+.content .exec {
+  background: var(--sage-tint);
+  border: 1px solid color-mix(in srgb, var(--sage) 25%, var(--hair));
+  border-left: 4px solid var(--sage-deep);
+  padding: 20px 24px;
+  border-radius: 0 6px 6px 0;
+  margin: 24px 0 28px;
+}
+.content .exec h4 {
+  font-family: var(--f-mono);
+  color: var(--sage-deep);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  margin: 0 0 8px;
+}
+.content .exec p {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* Stat grid (in body · separate from hero metrics) */
+.content .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+.content .stat {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-left: 3px solid var(--gold-deep);
+  border-radius: 0 5px 5px 0;
+  padding: 12px 14px;
+}
+.content .stat .n {
+  font-family: var(--f-serif);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.05;
+  margin-bottom: 4px;
+}
+.content .stat .l {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Diff / highlight */
+.content .diff {
+  background: var(--gold-tint);
+  border: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  border-left: 4px solid var(--gold-deep);
+  padding: 18px 22px;
+  margin: 22px 0;
+  border-radius: 0 6px 6px 0;
+}
+.content .diff .tag {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  color: var(--gold-deep);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.content .diff h3 { color: var(--gold-deep); margin: 0 0 8px; }
+
+/* Market cut */
+.content .market-cut {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 14px 0;
+}
+.content .market-cut h3 { margin-top: 0; }
+
+/* Tables */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 12.5px;
+}
+.content table thead th {
+  text-align: left;
+  padding: 9px 11px;
+  border-bottom: 2px solid var(--hair);
+  font-family: var(--f-mono);
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mute);
+  background: var(--bone);
+}
+.content table tbody td {
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--hair);
+  color: var(--ink);
+  vertical-align: top;
+}
+.content table tbody tr:nth-child(odd) { background: var(--bone); }
+
+/* Sources */
+.content .srcs {
+  background: var(--bone);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 32px 0 0;
+  font-size: 12px;
+  color: var(--mute);
+}
+.content .srcs h4 { color: var(--ink-soft); margin: 0 0 6px; }
+.content .srcs ul { margin: 4px 0 0 18px; }
+.content .srcs li { color: var(--mute); font-size: 11.5px; }
+
+/* ─── Right rail · sticky pricing + details ─── */
+.buy-rail {
+  position: sticky;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Sample request (matches Precedence "Ask For Sample" pattern · separate from priced tiers) */
+.sample-box {
+  background: var(--white);
+  border: 1px solid var(--sage-deep);
+  border-radius: 6px;
+  padding: 16px 18px;
+  text-align: center;
+}
+.sample-box h5 {
+  font-family: var(--f-serif);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+.sample-box p {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+.sample-box .btn {
+  display: block;
+  width: 100%;
+  padding: 9px 14px;
+  background: var(--sage-deep);
+  color: var(--white);
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12.5px;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.sample-box .btn:hover { background: var(--ink); text-decoration: none; }
+
+/* Pricing box (paid tiers only · per Sunita's 2-level paid · Single + Corporate) */
+.buy-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.buy-box .head {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 12px 16px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.buy-box .indicative {
+  background: var(--gold-tint);
+  border-bottom: 1px solid color-mix(in srgb, var(--gold) 25%, var(--hair));
+  padding: 8px 16px;
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  color: var(--gold-deep);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.tier {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hair);
+}
+.tier:last-child { border-bottom: 0; }
+.tier .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+.tier .label {
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.tier .price {
+  font-family: var(--f-serif);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1;
+}
+.tier .price.indicative { font-size: 12px; color: var(--gold-deep); font-style: italic; font-weight: 500; }
+.tier .desc {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.45;
+  margin: 4px 0 10px;
+}
+.tier .btn {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: var(--f-ui);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--sage-deep);
+  text-align: center;
+  background: var(--white);
+  color: var(--sage-deep);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.tier .btn:hover { background: var(--sage-tint); text-decoration: none; }
+.buy-box .extras {
+  padding: 11px 16px;
+  border-top: 1px solid var(--hair);
+  background: var(--bone);
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.buy-box .extras a {
+  color: var(--ink-soft);
+  font-family: var(--f-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.buy-box .extras a:hover { color: var(--sage-deep); }
+
+/* Details box */
+.details-box {
+  background: var(--white);
+  border: 1px solid var(--hair);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.details-box .head {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--hair);
+  font-family: var(--f-ui);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.details-box dl {
+  margin: 0;
+  padding: 11px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  font-size: 11.5px;
+}
+.details-box dt {
+  font-family: var(--f-mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mute);
+}
+.details-box dd { margin: 0; color: var(--ink); font-weight: 500; }
+
+/* ─── Footer ─── */
+.foot {
+  background: var(--ink);
+  color: var(--bone);
+  padding: 40px 24px 24px;
+  margin-top: 48px;
+}
+.foot-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+}
+.foot h5 {
+  font-family: var(--f-ui);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.foot ul { list-style: none; padding: 0; margin: 0; }
+.foot li { margin-bottom: 7px; }
+.foot a { color: var(--bone); font-size: 12px; }
+.foot a:hover { color: var(--gold); text-decoration: none; }
+.foot p { color: color-mix(in srgb, var(--bone) 75%, var(--mute)); font-size: 12px; line-height: 1.55; }
+.foot .copy {
+  max-width: 1120px;
+  margin: 28px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid color-mix(in srgb, var(--bone) 15%, var(--ink));
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: color-mix(in srgb, var(--bone) 60%, var(--mute));
+}
+
+/* Responsive · collapse below 980px (well inside Streamlit-wide iframe) */
+@media (max-width: 980px) {
+  .page-grid { grid-template-columns: 1fr; }
+  .toc-rail, .buy-rail { position: static; }
+  .hero-inner { max-width: none; }
+  .hero-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 680px) {
+  .hdr nav { display: none; }
+  .hero-metrics { grid-template-columns: 1fr; }
+  .foot-inner { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="left">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">📧 upbringing.eipfm@outlook.com</a>
+  </div>
+  <div class="right">
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe</a>
+    <span class="sep">·</span>
+    <a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="brand">
+    <a class="wm" href="#top">iFeed <em>Market Research</em></a>
+    <span class="dot"></span>
+    <span class="tag">Regulator-grade</span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#top">Reports</a></li>
+      <li><a href="#top">Industries</a></li>
+      <li><a href="#top">Services</a></li>
+      <li><a href="#top">Methodology</a></li>
+      <li><a href="#top">About</a></li>
+    </ul>
+  </nav>
+  <a class="cta" href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0AThank%20you.">Speak to Analyst</a>
+</header>
+
+<div class="breadcrumb" id="top">
+  <a>Home</a><span class="sep">›</span>
+  <a>Reports</a><span class="sep">›</span>
+  <a>Bioanalytical</a><span class="sep">›</span>
+  <span class="here">Bioanalytical Services · Global Market with Irish &amp;amp; Indian Cuts</span>
+</div>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Bioanalytical · Full Report · MRA-REP-001</div>
+    <h1>Bioanalytical Services · Global Market with Irish &amp;amp; Indian Cuts</h1>
+    <p class="lede">A practitioner&#x27;s read of the bioanalytical services market post ICH M10 harmonisation, where data integrity discipline separates surviving labs from consolidation targets, and why most 483 observations now share a common root cause the reports don&#x27;t name.</p>
+    <div class="hero-meta"><div class="m"><strong>Author</strong>Sunita Nawale</div><div class="m"><strong>Published</strong>2026-04-22</div><div class="m"><strong>Currency</strong>Current as of 2026-04</div><div class="m"><strong>Horizon</strong>2026 – 2030</div></div>
+    <div class="hero-metrics"><div class="km"><div class="n">$4–6B</div><div class="l">Global market 2026</div></div><div class="km"><div class="n">7–9%</div><div class="l">CAGR 2026–2030</div></div><div class="km"><div class="n">ICH M10</div><div class="l">Finalised 2022 · harmonised BMV</div></div><div class="km"><div class="n">#1 finding</div><div class="l">DI remains top FDA BA observation</div></div><div class="km"><div class="n">India ~40%</div><div class="l">Of global BA volume · rising</div></div><div class="km"><div class="n">Ireland</div><div class="l">Premium niche · pharma-linked</div></div></div>
+    <div class="hero-actions"><a class="btn btn-primary" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0AThank%20you.">Request Free Sample</a><a class="btn btn-secondary" href="#1-global-market-landscape">Table of Contents</a></div>
+  </div>
+</section>
+
+<div class="page-grid">
+  <aside class="toc-rail"><h5>On this page</h5><ol><li><a href="#1-global-market-landscape">1 · Global Market Landscape</a></li><li><a href="#2-regulatory-forces">2 · Regulatory Forces</a></li><li><a href="#3-ireland-premium-niche">3 · Ireland · Premium Niche</a></li><li><a href="#4-india-volume-leader-quality-variance">4 · India · Volume Leader · Quality Variance</a></li><li><a href="#5-emerging-trends-2026-2028">5 · Emerging Trends · 2026–2028</a></li><li><a href="#6-competitive-gaps">6 · Competitive Gaps</a></li><li><a href="#7-commercial-implications">7 · Commercial Implications</a></li><li><a href="#8-risk-register">8 · Risk Register</a></li></ol></aside>
+  <main class="content">
+    <div class="exec"><h4>Executive Summary</h4><p>The global bioanalytical services market is ~<strong>$4–6B</strong> in 2026 · CAGR 7–9% through 2030. The market has been fundamentally reshaped by ICH M10 (finalised 2022) which for the first time harmonised bioanalytical method validation across FDA, EMA, PMDA, and other major regulators — and by a decade of FDA inspection focus on chromatography data integrity that has concentrated Warning Letter issuance into a handful of well-characterised failure modes. Ireland's bioanalytical footprint is modest but premium (specialist contract labs supporting pharma and biotech). India is a volume leader (post-Ranbaxy era professionalisation substantially complete) with continuing quality variance. <strong>The differentiator 2026-2028 is not method sophistication — it is data integrity governance depth.</strong> Most labs have the instruments; fewer have the audit-trail review cadence and governance architecture that survive an ALCOA+ inspection.</p></div>
+
+
+
+<h2 id="1-global-market-landscape">1 · Global Market Landscape</h2>
+<h3>Size and growth</h3>
+<p>Published estimates (Kalorama · Research and Markets · Grand View Research · IQVIA) cluster around $4–6B in 2026 depending on whether biomarker services, bioequivalence-linked BA, cell & gene therapy analytics, and contract research analytical work are bundled. CAGR 7–9% through 2030 driven by biologics pipeline growth, cell & gene therapy analytical complexity, and expanding biomarker validation demand for precision medicine trials.</p>
+
+<h3>Segment breakdown</h3>
+<table><thead><tr><th>Segment</th><th>2026 size</th><th>CAGR</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Small-molecule PK (LC-MS/MS)</td><td>~$1.8B</td><td>5–7%</td><td>Mature · price pressure</td></tr>
+<tr><td>Large-molecule PK (LBA · ligand binding)</td><td>~$1.2B</td><td>9–11%</td><td>Biologics growth · ADA / PK separation</td></tr>
+<tr><td>Biomarker assays</td><td>~$1.0B</td><td>12–15%</td><td>Precision medicine · M10 §4.2 extends validation</td></tr>
+<tr><td>Cell & gene therapy analytics</td><td>~$0.4B</td><td>18–22%</td><td>Fast-growing specialist segment</td></tr>
+<tr><td>ADA / immunogenicity</td><td>~$0.5B</td><td>10–12%</td><td>Biologics requirement · complexity rising</td></tr>
+<tr><td>Other (stability · impurity · etc.)</td><td>~$0.5B</td><td>5–7%</td><td>Stable niche</td></tr>
+</tbody></table>
+
+<h3>Top global players</h3>
+<table><thead><tr><th>Company</th><th>HQ</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Labcorp Drug Development (Fortrea)</td><td>USA</td><td>Large BA + BE network</td></tr>
+<tr><td>IQVIA Laboratories</td><td>USA</td><td>Integrated with IQVIA CRO services</td></tr>
+<tr><td>Charles River Laboratories</td><td>USA</td><td>Nonclinical BA + safety</td></tr>
+<tr><td>WuXi AppTec</td><td>China</td><td>Geopolitical exposure</td></tr>
+<tr><td>Syngene International</td><td>India</td><td>Biocon affiliate · fast growing · major capability</td></tr>
+<tr><td>SGS</td><td>Switzerland</td><td>Cross-industry · analytical services</td></tr>
+<tr><td>Eurofins CDMO Scientific</td><td>France · EU</td><td>European network · fragmented acquisition</td></tr>
+<tr><td>PPD/Thermo Fisher</td><td>USA</td><td>Part of Thermo Fisher post-2021</td></tr>
+<tr><td>Frontage Laboratories</td><td>USA/India</td><td>US + India operations</td></tr>
+<tr><td>ICON Labs</td><td>Ireland</td><td>Smaller · complementary to CRO services</td></tr>
+</tbody></table>
+
+<h2 id="2-regulatory-forces">2 · Regulatory Forces</h2>
+<h3>ICH M10 · the 2022 harmonisation</h3>
+<p>Finalised 2022 after multi-year ICH process. Replaced fragmented FDA BMV guidance (2018), EMA BMV guideline (2011), and various national frameworks with a single harmonised approach. Validation parameters (selectivity · sensitivity · LLOQ · calibration range · accuracy · precision · matrix effect · recovery · dilution integrity · stability · ISR) now codified globally. §4.2 extends validation to biomarker assays explicitly. Commercial implication: smaller labs with legacy practices face 18–24 month catch-up investment; most by 2026 have either caught up or are consolidating into larger operations.</p>
+
+<h3>21 CFR Part 11 · EU GMP Annex 11 · MHRA DI · PIC/S DI</h3>
+<p>The data integrity regulatory stack has been stable in letter but progressively stricter in inspection interpretation since 2018. MHRA Data Integrity Guidance (2018) and PIC/S DI (2021) operationalise ALCOA+ expectations. FDA Warning Letters to BA labs continue to concentrate around audit trail review cadence, manual integration documentation, and electronic signature controls. Commercial implication: labs without live audit-trail-review discipline score observations; labs with disciplined practice clear inspections cleanly — a meaningful commercial differentiator for outsourcing decisions.</p>
+
+<h3>OECD GLP · still the foundation for nonclinical work</h3>
+<p>No structural change; OECD MAD (Mutual Acceptance of Data) continues to enable GLP-certified data to move across member countries. Occasional scope expansions (recent OECD updates on digital tools within GLP) keep the regulatory layer alive without disruption.</p>
+
+<h2 id="3-ireland-premium-niche">3 · Ireland · Premium Niche</h2>
+<div class="market-cut"><h3><span class="flag-ie"></span>Ireland specific cut</h3>
+<p><strong>Scale:</strong> Relatively modest compared to CRO services or MedTech, but strategically positioned. Ireland hosts bioanalytical work in three contexts: (1) pharma manufacturer in-house quality labs supporting Irish-based production (Pfizer · MSD · AbbVie · Bristol-Myers Squibb · etc.); (2) specialist contract analytical labs supporting biotech pipelines; (3) academic medical centre analytical labs supporting clinical trials conducted in Ireland.</p>
+
+<p><strong>Key players (Ireland):</strong></p>
+<ul>
+<li>Almac Group (Craigavon NI + Dundalk IE) · specialist CDMO with analytical services</li>
+<li>ICON Labs · CRO-linked</li>
+<li>APC Ltd · Dublin · analytical + continuous manufacturing expertise</li>
+<li>APC's spin-out · Process analytical technology · specialised niche</li>
+<li>Eurofins Ireland · multi-location · quality testing</li>
+<li>Pharma major internal labs (Pfizer Grange Castle · MSD Ballydine · AbbVie Carlow · etc.)</li>
+</ul>
+
+<p><strong>Commercial dynamics:</strong> Most high-end Irish BA work is captive to pharma internal labs or handled by affiliated contract partners. The independent contract BA market is relatively thin but premium-priced. Irish labs tend to occupy the upper-quality tier of the contract market; price competition with Indian and Chinese labs on commodity work is unviable, but Irish labs hold significant share in biologics PK/PD, cell and gene therapy analytics, and method development for complex modalities.</p>
+
+<p><strong>Commercial opportunity:</strong> Data integrity governance audit and ICH M10 implementation readiness for mid-sized Irish labs working under FDA and EMA oversight. Service at €3,500–6,500 per focused engagement (Service 3.4 in the practice's menu), higher for combined M10 + Part 11 + QMS reviews.</p>
+</div>
+
+<h2 id="4-india-volume-leader-quality-variance">4 · India · Volume Leader · Quality Variance</h2>
+<div class="market-cut"><h3><span class="flag-in"></span>India specific cut</h3>
+<p><strong>Scale:</strong> India estimated ~40% of global BA services volume. Major clusters: Bengaluru (Syngene · Frontage · various) · Hyderabad · Mumbai · Ahmedabad · Vadodara. Estimated Indian BA market $1.2–2.0B in 2026 · growth 10–13% CAGR.</p>
+
+<p><strong>Regulatory context:</strong> CDSCO oversight for domestic submissions · FDA/EMA/WHO inspections for export work · state drug control authorities for local compliance. GLP certification expanding · quality infrastructure professionalising rapidly post the 2013–2018 enforcement cycle.</p>
+
+<p><strong>Commercial dynamics:</strong></p>
+<ul>
+<li>Major players: Syngene (Biocon · ~$400M revenue) · Veeda Clinical Research · Panexcell · Frontage India · Lotus Labs (Teva group) · Lambda Therapeutic · Accutest</li>
+<li>Tier structure: top tier internationally-inspected · mid tier rapidly catching up · lower tier continues to face quality challenges</li>
+<li>Cost advantage vs US/EU substantial (30–60% lower per-study) · drives outsourcing from Western sponsors</li>
+<li>FDA Warning Letter volume to Indian BA facilities declining from 2018–2020 peak but still significant · ongoing enforcement focus on chromatography DI</li>
+</ul>
+
+<p><strong>Opportunity:</strong> Indian BA labs preparing for US/EU inspection benefit enormously from pre-inspection gap assessments done to international standard. Service 3.4 adapted for Indian market — $8,000–25,000 per focused engagement depending on scope — is a viable offering, especially for mid-tier labs seeking to move up into premium-tier Western work. Practitioner with direct Lotus/Panexcell/Genechth experience has unusual advantage in this segment.</p>
+</div>
+
+<h2 id="5-emerging-trends-2026-2028">5 · Emerging Trends · 2026–2028</h2>
+<ol>
+<li><strong>High-resolution mass spectrometry (HRMS) penetrates regulated BA.</strong> Orbitrap and TOF instruments moving from discovery into regulated work · regulatory acceptance mature but method validation expectations evolving.</li>
+<li><strong>Biomarker validation reaches ICH M10 maturity.</strong> §4.2 extension now being implemented · ligand-binding assays supporting primary endpoints face stricter validation expectations.</li>
+<li><strong>Cell and gene therapy analytics professionalise.</strong> Previously informal practice under GMP for product release and under less-formal practices for bioanalytical support; sub-segment consolidating around defined validation approaches.</li>
+<li><strong>Automation and AI in BA laboratory operations.</strong> Liquid handler automation mature · AI-assisted chromatography peak review emerging · regulatory acceptance of AI in integration review still developing.</li>
+<li><strong>Data integrity inspection focus shifts to CSV (computer system validation).</strong> Audit trails + Part 11 fundamentals remain · but newer inspection interest in LIMS + CDS + ELN integration validation.</li>
+<li><strong>Consolidation of mid-tier BA service providers.</strong> ICH M10 compliance investment creates barrier to entry; smaller labs either sell or specialise. Expect 10–15% reduction in independent BA provider count 2026–2028.</li>
+<li><strong>Indian quality-tier migration.</strong> Middle-tier Indian labs moving up to premium international work as their DI governance matures and US/EU inspection track records cleanse.</li>
+</ol>
+
+<div class="diff"><div class="tag">★ The Differentiator Layer · What Standard Reports Miss</div>
+<h3>Data Integrity Governance as the Commercial Moat</h3>
+
+<p>Every market report on bioanalytical services treats data integrity as a compliance topic. They're correct that it is compliance work; they miss that <strong>data integrity governance depth has become the single most predictive indicator of which labs will thrive versus consolidate.</strong></p>
+
+<p>The mechanism: FDA and EMA inspector trending over 2020–2025 has concentrated observations into a handful of well-characterised data integrity failure modes — chromatography integration without documented reason, audit trail review gaps, manual data transformation without controls, shared-login CDS access, and post-run parameter changes without traceability. These failure modes, diagnosed from inspection observations pooled across hundreds of labs, share a common root cause: <strong>an absent or shallow audit-trail review cadence.</strong></p>
+
+<p>The pattern I've seen repeat across three types of BA labs (India pre-2020, US mid-cap labs 2021-2024, EU labs 2023-2025): instruments exist · data gets generated · audit trails are technically enabled but nobody reviews them on a routine schedule. When inspection comes, the audit trails reveal the failure modes that management didn't know were happening.</p>
+
+<p>The governance architecture that distinguishes surviving labs from consolidation targets is five-layered:</p>
+
+<ol>
+<li><strong>Named accountability.</strong> One person has formal responsibility for chromatography DI; not "QA" as a collective.</li>
+<li><strong>Cadence discipline.</strong> Audit trail review runs on a defined rhythm (weekly for high-volume · per-study for low-volume).</li>
+<li><strong>Documented deviation path.</strong> Integration changes have a prescribed path to document reason — not afterthought.</li>
+<li><strong>Management review that reviews.</strong> MR minutes that reference actual DI metrics · not "reviewed and acceptable" platitudes.</li>
+<li><strong>Training + culture.</strong> Analysts understand WHY DI matters, not just what the SOP says.</li>
+</ol>
+
+<p>Labs with all five are uninspectable in a negative sense — inspectors find issues to discuss but not findings to write. Labs missing any of the five accumulate risk invisibly until inspection surfaces it.</p>
+
+<p><strong>Commercial window:</strong> this is D1 territory for the practice. Service 3.4 (Bioanalytical DI Gap Assessment) at €3,500–6,500 for a focused 2–3 week engagement; adapted pricing for Indian market as noted above. Cross-domain audits that include BA DI (for pharma operators running both manufacturing QC and BA) price at €8,000–18,000.</p>
+
+<p><strong>Cross-domain insight:</strong> the ALCOA+ discipline that governs BA data integrity is operationally identical to the records discipline that QMSR §820.35 requires for device QMS, and to the TMF discipline E6(R3) §8 requires for clinical trials. Organisations running BA + devices + clinical trials in parallel can unify records governance under one architecture — another angle the flagship Cross-Domain QI Governance Audit (Service 3.5) exploits.</p>
+</div>
+
+<h2 id="6-competitive-gaps">6 · Competitive Gaps</h2>
+<table><thead><tr><th>Gap</th><th>Why</th><th>Window</th></tr></thead><tbody>
+<tr><td>BA DI gap assessment for Irish mid-size pharma labs</td><td>In-house labs have thin external auditing · FDA inspection not routine but consequential when it comes</td><td>€3,500–6,500 focused · €8,000–18,000 extended</td></tr>
+<tr><td>Indian BA lab US/EU inspection readiness</td><td>Indian consultants often under-price rigour · Western consultants price out Indian mid-tier</td><td>$8,000–25,000 · remote-first · direct experience advantage</td></tr>
+<tr><td>ICH M10 implementation for biomarker assays</td><td>§4.2 extension under-implemented · most labs treat biomarkers as they did in pre-M10 era</td><td>€5,000–10,000 focused review</td></tr>
+<tr><td>Cross-domain records governance</td><td>BA + devices + trials + pharma operators rarely unify records discipline</td><td>€8,000–18,000 flagship</td></tr>
+</tbody></table>
+
+<h2 id="7-commercial-implications">7 · Commercial Implications</h2>
+<ol>
+<li>Service 3.4 (BA DI Gap) as D1 offering · highest-confidence service in the menu · €3,500–6,500 for focused · €8,000–18,000 for extended</li>
+<li>Raise BA DI visibility in the iFeed content mix — currently underweighted vs. its D1 standing</li>
+<li>Target Indian BA labs directly · Lotus/Panexcell alumni network an asset</li>
+<li>Flagship content: "ISR is not a pass-fail test · it's the governance signal everyone misreads"</li>
+<li>Cross-domain flagship article series explicitly includes BA as one of the three domains</li>
+<li>Do not enter: cell and gene therapy analytics primary consulting (D3/D4 · capability build needed)</li>
+</ol>
+
+<h2 id="8-risk-register">8 · Risk Register</h2>
+<ul>
+<li>FDA inspection frequency to Indian BA labs declines → softens opportunity</li>
+<li>AI-assisted chromatography review matures → reshapes DI governance requirements</li>
+<li>Major Irish pharma operator BA consolidation → reduces addressable Irish client base</li>
+<li>Cell & gene therapy BA becomes dominant sub-segment faster than forecast → requires capability shift</li>
+</ul>
+
+<div class="srcs"><h3 style="margin-top:0">Sources &amp; Methodology</h3>
+<ul>
+<li>Kalorama Bioanalytical Services Market report 2025-2026</li>
+<li>Research and Markets Bioanalytical Testing Services Forecast</li>
+<li>IQVIA MedTech + Lab services data</li>
+<li>FDA Warning Letter database · 2018-2025 BA facility analysis</li>
+<li>ICH M10 final guideline (2022)</li>
+<li>MHRA Data Integrity Guidance · PIC/S DI Guidance</li>
+<li>OECD GLP Principles · MAD framework</li>
+<li>Author's direct practice · Lotus Labs (Teva) · Panexcell · Genechth operational experience</li>
+</ul></div>
+  </main>
+  <aside class="buy-rail"><div class="sample-box"><h5>Want a preview?</h5><p>Request a free executive-brief sample · no payment · email reply.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Sample%20request%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20the%20sample%20for%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0AThank%20you.">Request Free Sample</a></div><div class="buy-box"><div class="head">Pricing &amp; Licensing</div><div class="indicative">⚑ Indicative pricing · contact for current</div><div class="tiers"><div class="tier"><div class="row"><span class="label">Single-User License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Full report PDF + Excel data files · 1 user · 12-month updates.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Single-user%20license%20pricing%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29%20%C2%B7%20Single-User%20License.%0A%0AThank%20you.">Get Pricing</a></div><div class="tier"><div class="row"><span class="label">Corporate License</span><span class="price indicative">Indicative · contact</span></div><p class="desc">Multi-user · all data files · 30-min analyst session · customization.</p><a class="btn" href="mailto:upbringing.eipfm@outlook.com?subject=Corporate%20license%20quote%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0APlease%20send%20pricing%20for%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29%20%C2%B7%20Corporate%20License.%0A%0AThank%20you.">Get a Quote</a></div></div><div class="extras"><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0AThank%20you.">📅 Speak to analyst</a><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0ADescribe%20customization%3A%0A%0A">✂️ Customize this report</a></div></div><div class="details-box"><div class="head">Report Details</div><dl><dt>Report ID</dt><dd>MRA-REP-001</dd><dt>Tier</dt><dd>Full Report</dd><dt>Author</dt><dd>Sunita Nawale</dd><dt>Published</dt><dd>2026-04-22</dd><dt>Currency</dt><dd>Current as of 2026-04</dd><dt>Horizon</dt><dd>2026 – 2030</dd></dl></div></aside>
+</div>
+
+<footer class="foot"><div class="foot-inner"><div><h5>iFeed Market Research</h5><p>Regulator-grade market intelligence across bioanalytical, bioequivalence, clinical trials, governance, LIMS, medical devices and AI in healthcare. Operator-built · evidence-first.</p></div><div><h5>Get in touch</h5><ul><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Speak%20to%20analyst%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20speak%20to%20the%20analyst%20about%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0AThank%20you.">Speak to analyst</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Customize%20report%20%C2%B7%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts&body=Hi%2C%0A%0AI%27d%20like%20to%20customize%3A%20Bioanalytical%20Services%20%C2%B7%20Global%20Market%20with%20Irish%20%26amp%3B%20Indian%20Cuts%20%28MRA-REP-001%29.%0A%0ADescribe%20customization%3A%0A%0A">Request custom research</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Subscribe%20to%20iFeed%20digest">Subscribe to digest</a></li><li><a href="mailto:upbringing.eipfm@outlook.com?subject=Contact%20iFeed%20Market%20Research">Contact</a></li></ul></div></div><div class="copy">© 2026 iFeed Market Research · Pricing indicative · contact for current · upbringing.eipfm@outlook.com</div></footer>
+
+</body>
+</html>

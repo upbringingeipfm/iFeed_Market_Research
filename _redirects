@@ -1,0 +1,26 @@
+# Netlify _redirects · iFeed Market Research
+# Pretty URLs without .html · plus domain shortcuts.
+
+# Sample-page shortcuts (per domain)
+/sample/bioanalytical       /samples/bioanalytical.html       200
+/sample/bioequivalence      /samples/bioequivalence.html      200
+/sample/clinical-trials     /samples/clinical-trials.html     200
+/sample/medical-devices     /samples/medical-devices.html     200
+/sample/governance          /samples/governance-qms.html      200
+/sample/lims                /samples/lims.html                200
+
+# Full-report shortcuts
+/report/bioanalytical       /reports/bioanalytical-full.html  200
+/report/bioequivalence      /reports/bioequivalence-full.html 200
+/report/clinical-trials     /reports/clinical-trials-full.html 200
+/report/medical-devices     /reports/medical-devices-full.html 200
+/report/governance          /reports/governance-qms-full.html 200
+/report/lims                /reports/lims-full.html           200
+
+# Legacy / friendly URLs
+/reports                    /index.html#reports               302
+/contact-us                 /contact.html                     301
+/about-us                   /about.html                       301
+
+# 404 fallback
+/*                          /404.html                         404
